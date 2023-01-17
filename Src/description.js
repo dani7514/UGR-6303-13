@@ -325,15 +325,23 @@ const products=[{
 
 function slider(e){
     const nextBtn=document.querySelector(".slider--section-one__forward");
+    const prevBtn=document.querySelector(".slider--section-one__back");
     const image=document.querySelector(".select-car__image")
-    let counter=1;
+    let counter=0;
     console.log("dani")
     nextBtn.addEventListener('click', () => {
-        image.setAttribute("src", e[counter]);
         counter++;
         if (counter > e.length - 1){
             counter = 0;
         }
+        image.setAttribute("src", e[counter]);
+    });
+    prevBtn.addEventListener('click', () => {
+        counter--;
+        if (counter < 0){
+            counter = e.length - 1;
+        }
+        image.setAttribute("src", e[counter]);
     });
 }
 
