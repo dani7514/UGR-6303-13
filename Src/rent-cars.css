@@ -7,9 +7,7 @@
     box-sizing: border-box;
 }
 .header {
-    /*width: 100%;*/
     height: 575px;
-    /* height: 100vh; */
     background: linear-gradient(0deg, rgba(255 255 255 / 54%), rgba(255 0 150 / 69%)), url(./Images/background\ image.jpg) no-repeat center center;
     background-size: cover;
     position: relative;
@@ -19,7 +17,6 @@
     height: 50px;
 }
 .navigations {
-    /*width: 100%;*/
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,7 +35,7 @@
     margin-right: 10px;
 }
 .navigations a {
-font-weight: 600;
+    font-weight: 600;
     font-size: 1.7rem;
     color: white;
 }
@@ -70,11 +67,7 @@ font-weight: 600;
 .menu {
     display: none;
 }
-/* .profile-register {
-    display: none;
-} */
 p {
-    /*font-size: 2.5rem;*/
     font-size: 200%;
     color: white;
     text-align: center;
@@ -86,11 +79,8 @@ p {
     align-items: center;
     justify-content: center;
 }
-#search {
-    /* margin-left: 3%; */
-  /* margin: 0 0 3% 3% ; */
+.search__inp {
     width: 450px;
-    /* width: max(40%, 200px); */
     height: 50px;
     padding-left: 40px;
     font-size: 15px;
@@ -107,7 +97,6 @@ p {
     margin-right: 30%;
     margin-bottom: 3%;
     width: 400px;
-    /* width: max(10%, 100px); */
     height: 50px;
     border: none;
     border-radius: 4px;
@@ -123,7 +112,6 @@ label {
 }
 
 .rent-cars {
-    /*margin:100px 100px 0 250px;*/
     display: grid;
     column-gap: 10px;
     row-gap: 50px;
@@ -143,8 +131,6 @@ label {
     cursor: pointer;
 }
 .product{
-    /* width: 270px;
-    height: 350px;*/
     width: 80%;
     height: 350px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
@@ -167,7 +153,6 @@ label {
 }
 .product__description {
     margin: 3px 10px;
-  /*font-size: 13px;*/
     font-size: 75%;
     font-weight: 300;
     color: black;
@@ -178,7 +163,6 @@ label {
     justify-content: space-between;
 }
 .back-forward {
-    /* width: 65px; */
     width: 15%;
     height: 45px;
     border: none;
@@ -192,7 +176,6 @@ label {
     border-radius: 5px;
     background-color: lightgrey;
     margin-top: 10px;
-    /* width: 45px; */
     width: 7%;
     height: 25px;
     cursor: pointer;
@@ -209,7 +192,6 @@ label {
     height: 200px;
 }
 .footer p {
-    /*font-size: 2.5rem;*/
     font-size: 200%;
     color: white;
     text-align: center;
@@ -225,7 +207,6 @@ label {
     margin-left: 8%;
     margin-top: 8%;
     font-weight: 800;
-    /*font-size: 2.5rem;*/
     font-size: 200%;
 }
 .logo__name span{
@@ -285,7 +266,7 @@ label {
       margin: 2% 4%;
       flex-direction: column;
     }
-    #search {
+    .search__inp {
       width: 250px;
     }
     .search-btn {
@@ -321,19 +302,6 @@ label {
   
     
 }
-/* @media (min-width: 780px){
-.search {
-    margin: 2% 2%;
-    flex-direction: column;
-}
-#search {
-    width: 200px;
-}
-label {
-    font-size: 1rem;
-    margin-left: 5%;
-}
-} */
   
 @media (max-width: 1000px) {
     .header img {
@@ -409,9 +377,9 @@ label {
 }
 
 @media (min-width: 1000px) {
-.rent-cars {
-    margin: 8% 8% 0 15%;
-    grid-template-columns: 1fr 1fr 1fr;
+    .rent-cars {
+        margin: 8% 8% 0 15%;
+        grid-template-columns: 1fr 1fr 1fr;
 }
 }
 

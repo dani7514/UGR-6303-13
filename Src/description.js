@@ -382,35 +382,13 @@ function getID(){
 document.getElementById("search").addEventListener("search",search1);
 
 function search1(){
-    // let input=document.getElementById("search");
-    // let temp=input.value;
-    // let value=temp.toLowerCase()
-    // let sellCars=document.querySelector(".sell-cars")
-    // let select=products.find((el)=> el.name.toLowerCase()===value);
-    // const product=document.querySelectorAll(".product");
-    
-    // if (!temp){
-    //     product.forEach((el)=>{
-    //         el.style.display="none";
-    //     })
-    //     product.forEach((el)=>{
-    //         el.style.display="block";
-    //     })
-    // }else {
-    //     product.forEach((el)=>{
-    //         if (el.name.toLowerCase() !== value){
-    //             el.style.display="none";
-    //         }
-    //     })
-    //     // create(select)
-    // }
 
     const products = document.querySelectorAll(".product");
     console.log(document.getElementById("search").value)
     const value = document.getElementById("search").value.toLowerCase().trim();
 
     Array.prototype.forEach.call(products, product => {
-        // console.log(product.firstElementChild)
+       
         
         if (!product.firstElementChild.nextElementSibling.innerHTML.toLowerCase().includes(value)){
             product.style.display = 'none';
@@ -425,52 +403,6 @@ function search1(){
 }
 document.querySelector(".search-btn").addEventListener("click",search1);
 
-function create(el) {
-    console.log("dani")
-    const sellCars=document.querySelector(".sell-cars") ;
-    const rentCars=document.querySelector(".rent-cars") ;
-    let div=document.createElement("div");    
-    let img=document.createElement("img");
-    let div1=document.createElement("div");
-    let div2=document.createElement("div");
-    let div3=document.createElement("div");
-    let div4=document.createElement("div");
-    let a=document.createElement("a");
-    let btn=document.createElement("button");
-
-    div.appendChild(img);
-    div.appendChild(div1);
-    div.appendChild(div2);
-    div.appendChild(div3);
-    div.appendChild(div4);
-    div.appendChild(a);
-    a.appendChild(btn);
-
-    div.classList.add("product");
-    img.classList.add("product__images");
-    div1.classList.add("product__name");
-    div2.classList.add("product__description");
-    div3.classList.add("product__description");
-    div4.classList.add("product__description");
-    btn.classList.add("product__loading-more");
-
-    img.src=el.image[0];
-    div1.innerHTML=el.name;
-    div2.innerHTML=el.model;
-    div3.innerHTML=el.Engine;
-    div4.innerHTML=el.Money;
-    btn.innerHTML="View Detail"
-    a.href=el.href
-    let input=document.getElementById("search");
-    if (input.name==="search"){
-        sellCars.appendChild(div);
-    } else{
-        rentCars.appendChild(div);
-    }
-   
-    
-
-}
 
 
 
