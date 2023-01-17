@@ -1,0 +1,474 @@
+@import url(./font.css);
+* {
+    font-family:'Nunito Sans', sans-serif ;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.header {
+    /*width: 100%;*/
+    height: 575px;
+    /* height: 100vh; */
+    background: linear-gradient(0deg, rgba(255 255 255 / 54%), rgba(255 0 150 / 69%)), url(./Images/background\ image.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.header img {
+    width: 50px;
+    height: 50px;
+}
+.navigations {
+    /*width: 100%;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-top: 20px;
+    font-weight: 800;
+}
+.logo__name span{
+    color: yellow;
+}
+.logo__car {
+    margin-right: 10px;
+}
+.navigations a {
+    font-size: 1.7rem;
+    color: white;
+    font-weight: 600;
+}
+.navigations > a {
+    display: none;
+}
+.nav-bar a {
+    margin: 0 1rem;
+}
+.nav-bar a:hover ,nav a:active {
+    color: yellowgreen;
+}
+.nav2 {
+    margin-right: 40px;
+}
+.nav2 a:hover {
+    color: yellowgreen;
+}
+.nav2__about {
+    margin-right: 1rem;
+}
+.navigations__heading {
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    font-size: 2.5rem;
+    color: black;
+}
+.menu {
+    display: none;
+}
+/* .profile-register {
+    display: none;
+} */
+.title {
+    font-size: 2.5rem;
+    color: black;
+    text-align: center;
+    margin-top: 60px ;
+    
+}
+.title--para {
+    margin: 60px 0px;
+}
+.part-one {
+    position: relative;
+}
+.part-two {
+    position: relative;
+}
+.sell {
+    /*margin:90px 185px 0 185px;*/
+    width: 55%;
+    margin: auto;
+    /* margin: 7% 10% 0 10%; */
+    display: flex;
+    /* align-items: center;
+    justify-content: space-between;  */
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.slider {
+    width: 75px;
+}
+.slider--back,.slider--prev {
+    position: absolute;
+    left: 15%;
+    top: 40%;
+}
+.slider--forward,.slider--next{
+    position: absolute;
+    right: 15%;
+    top: 40%;
+}
+
+.slider-btn,.product__loading-more,.see-more,.sign-up {
+    width: 78px;
+    height: 78px;
+    background-color: white;
+    border: none;
+}
+
+.product{
+    width: 270px;
+    height: 350px; 
+   /* width: 24%;
+    height: 350px;*/
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.rent {
+    /*margin:90px 185px 0 185px;*/
+    width: 55%;
+    margin: auto;
+    /* margin: 7% 10% 0 10%; */
+    display: flex;
+    /* align-items: center;
+    justify-content: space-between;  */
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.product__loading-more{
+    /* width: 35%; */
+    width: 80px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 20px 80px;
+    text-align: center;
+    font-size: 0.8rem;
+    background-color: rgb(240, 248, 231);
+    cursor: pointer;
+}
+.product__name {
+    text-align: center;
+    color: black;
+    font-size: 17px;
+    font-weight: 800;
+    
+}
+.product span {
+    font-family: "Nunito Sans";
+    font-weight: 600;
+}
+.product__description {
+    margin: 5px 10px;
+    font-size: 12px;
+    font-weight: 300;
+    color: black;
+}
+.see-more {
+    margin-top: 3.5%;
+    margin-left: 35%;
+    width: 100px;
+    height: 45px;
+    border: 2px solid black;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: background-color, border-radius 150ms ease;
+}
+.see-more:hover {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+.product__images {
+    width: 270px;
+    height: 175px;  
+}
+.video {
+   margin: 5% 9% 0 10%;
+   width: 81%;
+   height: 400px;
+}
+.call {
+    margin: 100px 200px;
+    background-color: hsl(0, 0%, 98%);
+    height: 150px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.call-text {
+    margin-left: 100px;
+    color: black;
+}
+.call-text__big {
+    font-weight: 800;
+    font-size: 30px;
+}
+.call-text__small {
+    font-size: 18px;
+    color: black;
+}
+.sign-up {
+    margin-right: 100px;
+    background-color: lightgrey;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid black;
+    color: black;
+    cursor: pointer;
+}
+.sign-up:hover{
+    background-color: white;
+    color: #000;
+}
+.footer {
+    width: 100%;
+    height: 200px;
+}
+.footer p {
+    font-size: 200%;
+    color: white;
+    text-align: center;
+    margin-top: 40%;
+}
+.footer-top img {
+    width: 30px;
+    height: 30px;
+}
+.footer-top .logo {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8%;
+    margin-top: 8%;
+    font-weight: 800;
+    font-size: 200%;
+}
+.logo__name span{
+    color: yellow;
+}
+.footer-top .logo__car {
+    margin-right: 10px;
+    width: 65px;
+    height: 65px;
+}
+.footer-top {
+    background-color: hsl(209, 23%, 22%);
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+.footer-top a {
+    color: white;
+}
+.footer-top a:hover {
+    color: yellowgreen;
+}
+.quick-links {
+    text-align: center;
+    margin-right: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.quick-links__about, .quick-links__contact,
+ .quick-links__register, .facebook {
+    margin-bottom: 10px;
+}
+
+.copy-right {
+    background-color: hsl(207, 26%, 17%);
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+
+@media (max-width: 1000px){
+    .header img {
+        width: 35px;
+        height: 35px;
+    }
+    .logo {
+       margin-left: 2%;
+    }
+    
+    .menu {
+        display: initial;
+        cursor: pointer;
+        margin-left: 4%;
+    }
+    .navigations > a {
+        display: block;
+        margin-right: 4%;
+    }
+    .nav2 {
+        display: none;
+    } 
+    .nav-bar{
+        position: absolute;
+        top: 12%;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5rem;
+        text-align: center;
+        box-shadow: 4px 4px 20px rgb(15 54 55 / 20%);
+        clip-path: circle(0% at 0% 0%);
+    }
+    .nav-bar a {
+        display: block;
+
+    }
+    .nav-bar a:hover,nav a:active {
+        color: yellowgreen;
+    }
+    .active {
+        clip-path: circle(144% at 0% 0%);
+    }
+    .navigations__heading {
+        position: absolute;
+        top: 42%;
+        left: 15%;
+        font-size: 2.5rem;
+        color: black;
+    }
+    .footer p, .footer-top .logo  {
+        font-size: 80%;
+    }
+    .quick-links a ,  .follow-us a{
+        font-size: 60%;
+    }
+    .quick-links__about, 
+    .quick-links__contact, 
+    .quick-links__register, 
+    .facebook {
+        margin-bottom: 5px;
+    }
+    .footer-top .logo__car {
+        margin-right: 6%;
+        width: 28px;
+        height: 28px;
+    }
+    .footer-top img {
+        width: 15px;
+        height: 15px;
+    }    
+}
+
+@media (max-width: 780px) {
+    .slider {
+        display: block;
+        width: 25px;
+        height: 25px;
+    }
+    .slider--back,.slider--prev {
+        position: absolute;
+        left: 15%;
+        top: 50%;
+    }
+    .slider--forward,.slider--next{
+        position: absolute;
+        right: 15%;
+        top: 50%;
+    }
+    .sell,.rent{
+        width: 80%;
+        margin: auto;
+    }
+    .product__description {
+        font-size: 60%;
+    }
+    .product__loading-more {
+        display: block;
+        width: 30%;
+        margin: 20% 25%;
+        font-size: 60%;
+    }
+    .see-more {
+        display: block;
+        margin-left: 35%;
+    }
+    .call {
+        margin: 5% 10%;
+        height: 100px; 
+    }
+    .call-text {
+        margin-left: 10px;
+        color: black;
+    }
+    .call-text__big {
+        font-weight: 800;
+        font-size: 80%;
+    }
+    .call-text__small {
+        font-size: 50%;
+        color: black;
+    }
+    .sign-up {
+        display: block;
+        margin-right: 10px;
+    }
+}
+@media (min-width: 780px) and (max-width: 1300px) {
+    .sell ,.rent{
+        width: 70%;
+        margin: auto;
+    }
+    .slider {
+        width: 25px;
+        height: 25px;
+    }
+    .slider--back,.slider--prev {
+        position: absolute;
+        left: 15%;
+        top: 50%;
+    }
+    .slider--forward,.slider--next{
+        position: absolute;
+        right: 15%;
+        top: 50%;
+    }
+    .product__description {
+        font-size: 60%;
+    }
+    .product__loading-more {
+        display: block;
+        width: 33%;
+        margin: 10% 30%;
+    }
+    .see-more {
+        display: block;
+        margin-left: 45%;
+    }
+    .call {
+        margin: 5% 10%;
+        height: 100px; 
+    }
+    .call-text {
+        margin-left: 20px;
+        color: black;
+    }
+    .call-text__big {
+        font-weight: 800;
+        font-size: 90%;
+    }
+    .call-text__small {
+        font-size: 70%;
+        color: black;
+    }
+    .sign-up {
+        display: block;
+        margin-right: 10px;
+    }
+}

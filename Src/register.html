@@ -6,83 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="Images/icons/car.png">
     <title>Blue Nile</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="register.css">
 </head>
 <body>
-    <header aria-label="header">
-        <img  src="Images/icons/menu.png" alt="menu icon">
-        <div >
-            <a href="home.html"><img  src="Images/icons/car.png" alt="car logo"></a>
-            <a href="home.html" ><span>Blue</span>Nile </a>
+    <header aria-label="header" class="header">
+        <div class="navigations" >
+            <img class="menu" src="Images/icons/menu.png" alt="menu icon" />
+            <div class="logo">
+            <a href="index.html"
+                ><img class="logo__car" src="Images/icons/car.png" alt="car logo"
+            /></a>
+            <a href="index.html" class="logo__name"><span>Blue</span>Nile </a>
+            </div>
+            <nav class="nav-bar">
+            <a href="index.html">Home</a>
+            <a href="sell-cars.html">Sell Cars</a>
+            <a href="rent-cars.html">Rent Cars</a>
+            <a href="contact.html">Contact</a>
+            </nav>
+            <div class="nav2">
+            <a href="about.html" class="nav2__about">About</a>
+            <a href="register.html">Register</a>
+            </div>
+            <a href="register.html"
+            ><img
+                class="profile-register"
+                src="Images/icons/profile.png"
+                alt="profile for register"
+             /></a>  
         </div>
-        <nav>
-            <a href="home.html" >Home</a>
-            <a href="sell-cars.html" >Sell Cars</a>
-            <a href="rent-cars.html" >Rent Cars</a>
-            <a href="contact.html" >Contact</a>
-        </nav>
-        <div>
-            <a href="about.html" >About</a>
-            <a href="register.html" >Register</a>
-        </div>
-        <img  src="Images/icons/profile.png" alt="profile for register">
-        <h1>Register</h1>
+        <h1 class="navigations__heading">Register</h1>
     </header>
     <main>
-        <div >
-            <form id="" action="" aria-label="register-form">
-                <label id="name-label" for="name">Name
-                    <input id="name" type="text" required />
-                </label>
-                  
-                <label id="email-label" for="email">Email
-                    <input id="email" type="email"  required/>
-                </label>
-                <label id="password-label" for="password">Password
-                    <input id="password" type="password"  required/>
-                </label>
-                <label>User type
-                    <select id="dropdown">
-                      <option value="">select your role</option> 
-                      <option value="">individual</option>
-                      <option value="">campany</option>
-                    </select>
-                </label>
-                <label id="contact-label" for="contact">Contact number
-                    <input id="contact" type="text"  required/>
-                </label>  
+        <div class="register-container">
+            <form class="register-form" action="" aria-label="register-form" id="register-form">
+                <div class="form-container">
+                    <div class="first-form">
+                        <label id="name-label" class="first-form__name-label" for="name">Name
+                            <input id="name" type="text"  class="name"/>
+                            <span></span>
+                        </label>
+                          
+                        <label id="email-label" class="first-form__email-label" for="email">Email
+                            <input id="email" type="text" class="email" />
+                            <span></span>
+                        </label>
+                        <label id="contact-label" class="first-form__contact-label" for="contact">Contact number
+                            <input id="contact" type="text" class="contact" />
+                            <span></span>
+                        </label> 
+                    </div>
+                    <div class="second-form">
+                        <label id="password-label" class="first-form__password-label" for="password">Password
+                            <input id="password" class="password" type="password"  />
+                            <span></span>
+                        </label>
+                        <label id="user-type" class="first-form__user-type-label">User type
+                            <select id="dropdown" class="dropdown">
+                              <option value="">select your role</option> 
+                              <option value="">individual</option>
+                              <option value="">campany</option>
+                            </select>
+                        </label>
+                    </div>
+                    
+                </div> 
+                <button type="submit" class="register-button">Register</button>
             </form>
-            <button >Register</button>
+           
         </div>
 
     </main>
-    <footer aria-label="footer">
-        <div >
-            <div >
-                <a href="home.html"><img  src="Images/icons/car.png" alt="car logo"></a>
-                <a href="home.html" ><span>Blue</span>Nile </a>
+    <footer aria-label="footer" class="footer">
+        <div class="footer-top">
+          <div class="logo">
+            <a href="index.html"
+              ><img class="logo__car" src="Images/icons/car.png" alt="car logo"
+            /></a>
+            <a href="index.html" class="logo__name"><span>Blue</span>Nile </a>
+          </div>
+          <div class="follow-us">
+            <p>Follow Us</p>
+            <div class="facebook">
+              <a href="https://www.facebook.com/dani.yemisgaw"
+                ><img src="Images/icons/facebook-logo.png" alt="facebook logo"
+              /></a>
+              <a href="https://www.facebook.com/dani.yemisgaw">Facebook</a>
             </div>
-            <div >
-                <p >Follow Us</p>
-                <div >
-                    <a href="https://www.facebook.com/dani.yemisgaw"><img src="Images/icons/facebook-logo.png" alt="facebook logo"></a>
-                    <a  href="https://www.facebook.com/dani.yemisgaw" >Facebook</a>
-                </div>
-                <div >
-                    <a href="http://www.t.me/weldegzabher"><img  src="Images/icons/telegram.png" alt="telegram logo"></a>
-                    <a  href="http://www.t.me/weldegzabher" >Telegram</a>
-                </div>
+            <div>
+              <a href="http://www.t.me/weldegzabher"
+                ><img src="Images/icons/telegram.png" alt="telegram logo"
+              /></a>
+              <a href="http://www.t.me/weldegzabher">Telegram</a>
             </div>
-            <div >
-                <p >Quick Links</p>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="register.html">Register</a>
-                <a href="privacy-policy.html">Privacy Policy</a>
-            </div>
+          </div>
+          <div class="quick-links">
+            <p>Quick Links</p>
+            <a href="about.html" class="quick-links__about">About</a>
+            <a href="contact.html" class="quick-links__contact">Contact</a>
+            <a href="register.html" class="quick-links__register">Register</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+          </div>
         </div>
-        <div >Copyright &#169 Blue Nile 2022</div>
-    </footer>
-    
+        <div class="copy-right">Copyright &#169; Blue Nile 2022</div>
+      </footer>
+    <script src="formValidation.js" defer></script>
+    <script src="header-footer.js" defer></script>
 </body>
 </html>

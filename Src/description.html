@@ -6,121 +6,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="Images/icons/car.png">
     <title>Blue Nile</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="description.css">
 </head>
-<body>
-    <header aria-label="header">
-        <img  src="Images/icons/menu.png" alt="menu icon">
-        <div >
-           <a href="home.html"><img src="Images/icons/car.png" alt="car logo"></a> 
-            <a href="home.html" ><span >Blue</span>Nile </a>
+<body onload="getID()">
+    <header aria-label="header" class="header">
+        <div class="navigations" >
+            <img class="menu" src="Images/icons/menu.png" alt="menu icon" />
+        <div class="logo">
+          <a href="index.html"
+            ><img class="logo__car" src="Images/icons/car.png" alt="car logo"
+          /></a>
+          <a href="index.html" class="logo__name"><span>Blue</span>Nile </a>
         </div>
-        <nav >
-            <a href="home.html" >Home</a>
-            <a href="sell-cars.html" >Sell Cars</a>
-            <a href="rent-cars.html" >Rent Cars</a>
-            <a href="contact.html" >Contact</a>
+        <nav class="nav-bar">
+          <a href="index.html">Home</a>
+          <a href="sell-cars.html">Sell Cars</a>
+          <a href="rent-cars.html">Rent Cars</a>
+          <a href="contact.html">Contact</a>
         </nav>
-        <div >
-            <a href="about.html" >About</a>
-            <a href="register.html" >Register</a>
+        <div class="nav2">
+          <a href="about.html" class="nav2__about">About</a>
+          <a href="register.html">Register</a>
         </div>
-        <img  src="Images/icons/profile.png" alt="profile for register">
-        <h1 >Description</h1>
+        <a href="register.html"
+          ><img
+            class="profile-register"
+            src="Images/icons/profile.png"
+            alt="profile for register"
+        /></a> </div>
+        <h1 class="navigations__heading">Description</h1>
     </header>
     <main>
-        <section >
-            <p></p>
-            <div >
-                <button ><img src="Images/icons/backward.png" alt="backward slider"></button>
-                <div ><img src="Images/sell/Mercedes.jpg" alt=""></div>
-                <div ><img src="" alt=""></div>
-                <div ><img src="" alt=""></div>
-                <button ><img src="Images/icons/Forward.png" alt="Forward slider"></button>
+        <section class="section-one">
+            <p class="section-one__name-car">Mercedes</p>
+            <div class="select-car">
+                <img class="select-car__image" src="Images/sell/Mercedes.jpg" alt="">
             </div>
+            <img class=" slider slider--section-one__back" src="Images/icons/backward.png" alt="backward slider">
+            <img class="slider slider--section-one__forward" src="Images/icons/Forward.png" alt="Forward slider">
              <div class="paginations">
-                <span class="pagin1">1</span>
-                <span class="pagin2">2</span>
-                <span class="pagin3">3</span>
+                <span >1</span>
+                <span >2</span>
+                <span >3</span>
             </div>
         </section>
         <section>
-            <div >
-                <p >Description</p>
-                <div >
-                    <div >
-                        <ul aria-label="description-list-1">
-                            <li id="one">Model Number: Benz GLS 580 4MATIC 2022</li>
-                            <li id="two">Made In: American</li>
-                            <li id="three">Engine Power: 483 hp @ 5,500 rpm</li>
-                            <li id="four">Drive Type: 4MATIC fully variable All-Wheel Drive</li>
+            <div class="cars-description">
+                <p class="title">Description</p>
+                <div class="description-container">
+                    <div class="part-one">
+                        <ul aria-label="description-list-1" >
+                            <li id="one" class="part-one__desc"><span>Model Number:</span> Benz GLS 580 4MATIC 2022</li>
+                            <li id="two" class="part-one__desc"><span>Made In:</span> American</li>
+                            <li id="three" class="part-one__desc"><span>Engine Power: </span>483 hp @ 5,500 rpm</li>
+                            <li id="four" class="part-one__desc"><span>Drive Type:</span> 4MATIC fully variable All-Wheel </li>
                         </ul>
                     </div>
-                    <div >
-                        <ul aria-label="description-list-2">
-                            <li id="five">Gear Box: Gear Box</li>
-                            <li id="six">Charger: Turbo</li>
-                            <li id="seven">Mileage In City: 16 MPG</li>
-                            <li id="eight">Fuel Type: Premium unleaded gasoline</li>
+                    <div class="part-two">
+                        <ul aria-label="description-list-2" >
+                            <li id="five" class="part-one__desc"><span>Gear Box:</span> Gear Box</li>
+                            <li id="six" class="part-one__desc"><span>Charger: </span>Turbo</li>
+                            <li id="seven" class="part-one__desc"><span>Mileage In City:</span> 16 MPG</li>
+                            <li id="eight" class="part-one__desc"><span>Fuel Type:</span> Premium unleaded gasoline</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
-            <p >You may like</p>
-            <div >
-                <button ><img src="Images/icons/backward.png" alt="backward slider"></button>
-                <a href="description.html">.<div >
-                    <img src="Images/sell/lexus.jpg" alt="">
-                    <div ><span>Name</span>: Lexus</div>
-                    <div ><span> Model</span>: NX 450h+ Plug-in Hybrid F SPORT 2022</div>
-                    <div ><span>Engine</span>: 2.5L Inline-4 Plug-in Hybrid</div>
-                    <div ><span>Money</span>: BR. 67,000,000</div>
-                    <a href="description.html"><button >View Detail</button> </a>
+        <section class="sec-one">
+            <p class="sec-one__para">You may like</p>
+            <div class="sell">
+                <a href="description.html?id=7">.<div  class="product">
+                    <img class="product__images" src="Images/sell/lexus.jpg" alt="">
+                    <div  class="product__name"> Lexus</div>
+                    <div  class="product__description"><span> Model</span>: NX 450h+ Plug-in </div>
+                    <div  class="product__description"><span>Engine</span>: 2.5L Inline-4 Plug-in</div>
+                    <div  class="product__description"><span>Money</span>: BR. 67,000,000</div>
+                    <a href="description.html?id=7"><button class="product__loading-more">View Detail</button> </a>
                 </div></a>
-                <a href="description.html">.<div >
-                    <img src="Images/sell/Honda-Accord-Hybrid-Sport-2022.jpg" alt="">
-                    <div ><span>Name</span>: Honda</div>
-                    <div ><span>Model</span>: Accord Hybrid Sport 2022</div>
-                    <div ><span>Engine</span>: 1.5L Turbo Inline-4 Gas</div>
-                    <div ><span>Money</span>: BR. 7,800,200</div>
-                    <a href="description.html"><button >View Detail</button> </a>
+                <a href="description.html?id=11">.<div class="product" >
+                    <img class="product__images" src="Images/sell/Honda-Accord-Hybrid-Sport-2022.jpg" alt="">
+                    <div  class="product__name"> Honda</div>
+                    <div  class="product__description"><span>Model</span>: Accord Hybrid Sport</div>
+                    <div  class="product__description"><span>Engine</span>: 1.5L Turbo Inline-4 Gas</div>
+                    <div  class="product__description"><span>Money</span>: BR. 7,800,200</div>
+                    <a href="description.html?id=11"><button class="product__loading-more">View Detail</button> </a>
                 </div></a>
-                <a href="description.html">.<div >
-                    <img src="Images/sell/Rolls Royce.jpg" alt="">
-                    <div ><span>Name</span>: Rolls Royce</div>
-                    <div ><span>Model</span>: Ghost Extended 2022</div>
-                    <div ><span>Engine</span>: 6.7L Twin-Turbo V12 Gas</div>
-                    <div ><span>Money</span>: BR. 98,895,200</div>
-                    <a href="description.html"><button >View Detail</button> </a>
+                <a href="description.html?id=14">.<div class="product">
+                    <img class="product__images" src="Images/sell/Rolls Royce.jpg" alt="">
+                    <div  class="product__name"> Rolls Royce</div>
+                    <div  class="product__description"><span>Model</span>: Ghost Extended 2022</div>
+                    <div  class="product__description"><span>Engine</span>: 6.7L Twin-Turbo V12</div>
+                    <div  class="product__description"><span>Money</span>: BR. 98,895,200</div>
+                    <a href="description.html?id=14"><button class="product__loading-more">View Detail</button> </a>
                 </div></a>
-                <a href="description.html">.<div >
-                    <img src="Images/sell/tesla.jpg" alt="">
-                    <div ><span>Name</span>: Tesla</div>
-                    <div ><span> Model</span>: S Performance 2022</div>
-                    <div ><span>Engine</span>: Electric 480hp 471ft. lbs</div>
-                    <div ><span>Money</span>: BR. 120,000,000</div>
-                    <a href="description.html"><button >View Detail</button> </a>
+                <a href="description.html?id=16">.<div class="product">
+                    <img class="product__images" src="Images/sell/tesla.jpg" alt="">
+                    <div class="product__name">Tesla</div>
+                    <div class="product__description"><span> Model</span>: S Performance 2022</div>
+                    <div class="product__description"><span>Engine</span>: Electric 480hp 471ft. lbs</div>
+                    <div class="product__description"><span>Money</span>: BR. 120,000,000</div>
+                    <a href="description.html?id=16"><button class="product__loading-more">View Detail</button> </a>
                 </div></a>
-                <a href="description.html">.<div >
-                    <img src="Images/sell/volvo v60.jpg" alt="">
-                    <div ><span>Name</span>: Volvo</div>
-                    <div ><span>Model</span>: V60 Hybrid 2022</div>
-                    <div ><span>Engine</span>: 2.0L Turbo Inline-4 Gas</div>
-                    <div ><span>Money</span>: BR. 15,999,200</div>
-                    <a href="description.html"><button >View Detail</button> </a> 
+                <a href="description.html?id=18">.<div class="product">
+                    <img class="product__images" src="Images/sell/volvo v60.jpg" alt="">
+                    <div class="product__name"> Volvo</div>
+                    <div class="product__description"><span>Model</span>: V60 Hybrid 2022</div>
+                    <div class="product__description"><span>Engine</span>: 2.0L Turbo Inline-4 Gas</div>
+                    <div class="product__description"><span>Money</span>: BR. 15,999,200</div>
+                    <a href="description.html?id=18"><button class="product__loading-more">View Detail</button> </a> 
                 </div></a>
-                <a href="description.html">.<div >
-                    <img src="Images/sell/Ram.jpg" alt="">
-                    <div ><span>Name</span>: Ram</div>
-                    <div ><span> Model</span>: 1500TRX 2022</div>
-                    <div ><span>Engine</span>: 3.0L Twin-Turbo Flat 6 Gas</div>
-                    <div ><span>Money</span>: BR. 33,000,000</div>
-                    <a href="description.html"><button >View Detail</button> </a>
+                <a href="description.html?id=13">.<div class="product">
+                    <img class="product__images" src="Images/sell/Ram.jpg" alt="">
+                    <div class="product__name"> Ram</div>
+                    <div class="product__description"><span> Model</span>: 1500TRX 2022</div>
+                    <div class="product__description"><span>Engine</span>: 3.0L Twin-Turbo Flat 6 Gas</div>
+                    <div class="product__description"><span>Money</span>: BR. 33,000,000</div>
+                    <a href="description.html?id=13"><button class="product__loading-more">View Detail</button> </a>
                 </div></a>
-                <button ><img src="Images/icons/Forward.png" alt="Forward slider"></button>
+
             </div>
+            <button ><img class="slider slider--back" src="Images/icons/backward.png" alt="backward slider"></button>
+            <button ><img  class="slider slider--forward" src="Images/icons/Forward.png" alt="Forward slider"></button>
             <div class="paginations">
                 <span class="pagin1">1</span>
                 <span class="pagin2">2</span>
@@ -128,32 +135,45 @@
             </div>
         </section>
     </main>
-    <footer aria-label="footer">
-        <div >
-            <div >
-                <a href="home.html"><img  src="Images/icons/car.png" alt="car logo"></a>
-                <a href="home.html" ><span>Blue</span>Nile </a>
+    <footer aria-label="footer" class="footer">
+        <div class="footer-top">
+          <div class="logo">
+            <a href="index.html"
+              ><img class="logo__car" src="Images/icons/car.png" alt="car logo"
+            /></a>
+            <a href="index.html" class="logo__name"><span>Blue</span>Nile </a>
+          </div>
+          <div class="follow-us">
+            <p>Follow Us</p>
+            <div class="facebook">
+              <a href="https://www.facebook.com/dani.yemisgaw"
+                ><img src="Images/icons/facebook-logo.png" alt="facebook logo"
+              /></a>
+              <a href="https://www.facebook.com/dani.yemisgaw">Facebook</a>
             </div>
-            <div >
-                <p >Follow Us</p>
-                <div >
-                    <a href="https://www.facebook.com/dani.yemisgaw"><img src="Images/icons/facebook-logo.png" alt="facebook logo"></a>
-                    <a  href="https://www.facebook.com/dani.yemisgaw" >Facebook</a>
-                </div>
-                <div >
-                    <a href="http://www.t.me/weldegzabher"><img  src="Images/icons/telegram.png" alt="telegram logo"></a>
-                    <a  href="http://www.t.me/weldegzabher" >Telegram</a>
-                </div>
+            <div>
+              <a href="http://www.t.me/weldegzabher"
+                ><img src="Images/icons/telegram.png" alt="telegram logo"
+              /></a>
+              <a href="http://www.t.me/weldegzabher">Telegram</a>
             </div>
-            <div >
-                <p >Quick Links</p>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="register.html">Register</a>
-                <a href="privacy-policy.html">Privacy Policy</a>
-            </div>
+          </div>
+          <div class="quick-links">
+            <p>Quick Links</p>
+            <a href="about.html" class="quick-links__about">About</a>
+            <a href="contact.html" class="quick-links__contact">Contact</a>
+            <a href="register.html" class="quick-links__register">Register</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+          </div>
         </div>
-        <div >Copyright &#169 Blue Nile 2022</div>
+        <div class="copy-right">Copyright &#169; Blue Nile 2022</div>
     </footer>
+  
+  
+    <script src="description.js" defer></script>
+    <script src="header-footer.js" defer></script>
+    <script src="slider.js" defer></script>
+
+
 </body>
 </html>

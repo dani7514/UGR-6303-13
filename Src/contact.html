@@ -6,96 +6,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="Images/icons/car.png">
     <title>Blue Nile</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-    <header aria-label="header">
-        <img src="Images/icons/menu.png" alt="menu icon">
-        <div >
-            <a href="home.html"><img  src="Images/icons/car.png" alt="car logo"></a>
-            <a href="home.html" ><span >Blue</span>Nile </a>
+    <header aria-label="header" class="header">
+        <div class="navigations" >
+            <img class="menu" src="Images/icons/menu.png" alt="menu icon" />
+        <div class="logo">
+          <a href="index.html"
+            ><img class="logo__car" src="Images/icons/car.png" alt="car logo"
+          /></a>
+          <a href="index.html" class="logo__name"><span>Blue</span>Nile </a>
         </div>
-        <nav >
-            <a href="home.html" >Home</a>
-            <a href="sell-cars.html" >Sell Cars</a>
-            <a href="rent-cars.html" >Rent Cars</a>
-            <a href="contact.html" >Contact</a>
+        <nav class="nav-bar">
+          <a href="index.html">Home</a>
+          <a href="sell-cars.html">Sell Cars</a>
+          <a href="rent-cars.html">Rent Cars</a>
+          <a href="contact.html">Contact</a>
         </nav>
-        <div >
-            <a href="about.html" >About</a>
-            <a href="register.html" >Register</a>
+        <div class="nav2">
+          <a href="about.html" class="nav2__about">About</a>
+          <a href="register.html">Register</a>
         </div>
-        <img  src="Images/icons/profile.png" alt="profile for register">
-        <h1>Contact US </h1>
+        <a href="register.html"
+          ><img
+            class="profile-register"
+            src="Images/icons/profile.png"
+            alt="profile for register"
+        /></a>
+        </div>
+       
+        <h1 class="navigations__heading">Contact US </h1>
     </header>
     <main>
-        <section>
-            <form  id="contact" aria-label="contact-form">
-                    <label id="name-label" for="name">Name
-                      <input id="name" type="text" placeholder="Name" required />
-                    </label>
-                    
-                    <label id="email-label" for="email">Email
-                      <input id="email" type="email" placeholder="Email" required/>
-                    </label>
-                    
-                    <label id="subject-label" for="subject">Subject
-                      <input id="subject" type="text" placeholder="Subject"   />
-                    </label>
-                    <label for="comment">Message
-                        <textarea id="comment" placeholder="Message" ></textarea>
-                    </label> 
-                  <a href=""><button>Submit</button></a>   
+        <section class="section-one"> 
+            <form  id="contact" aria-label="contact-form" novalidate>
+                <div class="contact-container">
+                    <div class="form-one">
+                        <label id="name-label" class="form-one__name-label" for="name">Name
+                            <input id="name"  class="name" type="text" placeholder="Name"  />
+                            <span></span>
+                          </label>
+        
+                          <label id="email-label" class="form-one__email-label" for="email">Email
+                            <input id="email" class="email" type="email" placeholder="Email" />
+                            <span></span>
+                          </label>
+                          
+                          <label id="subject-label" class="form-one__subject-label" for="subject">Subject
+                            <input id="subject" class="subject" type="text" placeholder="Subject"   />
+                          </label> 
+                    </div>
+                    <div class="form-two">
+                        <label for="comment" id="comment-label" class="form-one__comment-label">Message
+                            <textarea id="comment" class="comment" placeholder="Message" ></textarea>
+                            <span></span>
+                        </label>
+                    </div>
+                </div> 
+                <button type="submit" class="submit">Submit</button>   
             </form>
         </section>
-        <section>
+        <section class="section-two">
             <h2>Address</h2>
-            <div>
-                <img src="icons/maps-and-flags.png" alt="">
-                <p>Wollosefer,Ethio-China Street,Diredawa Building (0.58 mi)</p>
+            <div class="adresses">
+                <img src="Images/icons/maps-and-flags.png" alt="">
+                <p >Wollosefer,Ethio-China Street,Diredawa Building (0.58 mi)</p>
             </div>
-            <div>
-                <img src="icons/email.png" alt="">
-                <a href="#">@Blue Nile</a>
+            <div class="adresses">
+                <img src="Images/icons/email.png" alt="">
+                <a href="" class="adresses__email">@Blue Nile</a>
             </div>
-            <div>
-                <img src="icons/phone-call.png" alt="">
-                <a href="#">+251963915625</a>
+            <div class="adresses">
+                <img src="Images/icons/phone-call.png" alt="">
+                <p>+251963915625</p>
             </div>
-            <div>
-                <img src="icons/cell-phone.png" alt="">
-                <a href="#">+25175149601</a>
+            <div class="adresses">
+                <img src="Images/icons/cell-phone.png" alt="">
+                <p>+25175149601</p>
             </div>
         </section>
 
     </main>
-    <footer aria-label="footer">
-        <div >
-            <div >
-                <a href="home.html"><img  src="Images/icons/car.png" alt="car logo"></a>
-                <a href="home.html" ><span>Blue</span>Nile </a>
+    <footer aria-label="footer" class="footer">
+        <div class="footer-top">
+          <div class="logo">
+            <a href="index.html"
+              ><img class="logo__car" src="Images/icons/car.png" alt="car logo"
+            /></a>
+            <a href="index.html" class="logo__name"><span>Blue</span>Nile </a>
+          </div>
+          <div class="follow-us">
+            <p>Follow Us</p>
+            <div class="facebook">
+              <a href="https://www.facebook.com/dani.yemisgaw"
+                ><img src="Images/icons/facebook-logo.png" alt="facebook logo"
+              /></a>
+              <a href="https://www.facebook.com/dani.yemisgaw">Facebook</a>
             </div>
-            <div >
-                <p >Follow Us</p>
-                <div >
-                    <a href="https://www.facebook.com/dani.yemisgaw"><img src="Images/icons/facebook-logo.png" alt="facebook logo"></a>
-                    <a  href="https://www.facebook.com/dani.yemisgaw" >Facebook</a>
-                </div>
-                <div >
-                    <a href="http://www.t.me/weldegzabher"><img  src="Images/icons/telegram.png" alt="telegram logo"></a>
-                    <a  href="http://www.t.me/weldegzabher" >Telegram</a>
-                </div>
+            <div>
+              <a href="http://www.t.me/weldegzabher"
+                ><img src="Images/icons/telegram.png" alt="telegram logo"
+              /></a>
+              <a href="http://www.t.me/weldegzabher">Telegram</a>
             </div>
-            <div >
-                <p >Quick Links</p>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="register.html">Register</a>
-                <a href="privacy-policy.html">Privacy Policy</a>
-            </div>
+          </div>
+          <div class="quick-links">
+            <p>Quick Links</p>
+            <a href="about.html" class="quick-links__about">About</a>
+            <a href="contact.html" class="quick-links__contact">Contact</a>
+            <a href="register.html" class="quick-links__register">Register</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+          </div>
         </div>
-        <div >Copyright &#169 Blue Nile 2022</div>
+        <div class="copy-right">Copyright &#169; Blue Nile 2022</div>
     </footer>
-    
+   <script src="formValidation.js"></script>
+   <script src="header-footer.js" defer></script> 
 </body>
 </html>
