@@ -76,18 +76,19 @@ function formValidation(e) {
     
     if (!error) {
         let succss= document.createElement('div');
-        let main=document.querySelector('main');
-        let section=document.querySelector('.register-container');
         let form=document.querySelector('.register-form');
-        let sec=document.querySelector('.section-one');
-        main.insertBefore(succss, section);
-        main.insertBefore(succss, sec);
-        succss.textContent="Register Successfully!";
-        succss.style.margin="8% 40% 0% 40%";
+        let form1=document.getElementById('contact')
+        succss.textContent="Successfully!";
         succss.style.textAlign = "center"
-        succss.style.padding="1em 2em"
+        
+        succss.style.padding="0em 1em"
         succss.style.backgroundColor="green";
         succss.style.color="white";
+        succss.style.zIndex="2"
+       
+        form1.appendChild(succss)
+        form.appendChild(succss)
+       
         Array.prototype.forEach.call(form.querySelectorAll("input"), inp => {
             inp.addEventListener("focus", () => succss.style.display = "none" )
         })
