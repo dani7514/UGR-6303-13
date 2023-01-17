@@ -9,7 +9,6 @@ myForm.addEventListener("submit",formValidation);
 function formValidation(e) {
     console.log("dani")
     e.preventDefault();
-    //let data={};
     let error=false;
     inputs.forEach(function(el) {
         let temp=el.getAttribute("id");
@@ -70,18 +69,19 @@ function formValidation(e) {
                 addError(el,"Required Field",temp);
                 error= true; 
             }
-            //data[temp] = el.value;
+            
 
         }
     });
     
     if (!error) {
         let succss= document.createElement('div');
+        let main=document.querySelector('main');
         let section=document.querySelector('.register-container');
         let form=document.querySelector('.register-form');
-        section.insertBefore(succss, form)
+        main.insertBefore(succss, section)
         succss.textContent="Register Successfully!";
-        // succss.style.margin="1% 40%";
+        succss.style.margin="8% 40% 0% 40%";
         succss.style.textAlign = "center"
         succss.style.padding="1em 2em"
         succss.style.backgroundColor="green";
@@ -89,9 +89,7 @@ function formValidation(e) {
         Array.prototype.forEach.call(form.querySelectorAll("input"), inp => {
             inp.addEventListener("focus", () => succss.style.display = "none" )
         })
-        // setTimeout(()=> {
-        //     myForm.submit()
-        // },3000)
+       
     }
 }
 
