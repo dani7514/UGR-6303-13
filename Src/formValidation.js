@@ -79,7 +79,10 @@ function formValidation(e) {
         let main=document.querySelector('main');
         let section=document.querySelector('.register-container');
         let form=document.querySelector('.register-form');
-        main.insertBefore(succss, section)
+        let sec=document.querySelector('.section-one');
+        let form1=document.getElementById('contact');
+        main.insertBefore(succss, section);
+        sec.insertBefore(succss, form1);
         succss.textContent="Register Successfully!";
         succss.style.margin="8% 40% 0% 40%";
         succss.style.textAlign = "center"
