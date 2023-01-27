@@ -6,356 +6,369 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="Images/icons/car.png" />
     <title>Blue Nile</title>
-    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="public.css">
+    <link rel="stylesheet" href="bootstrap.css">
   </head>
   <body>
-    <header aria-label="header" class="header">
-      <div class="navigations">
-        <img class="menu" src="Images/icons/menu.png" alt="menu icon" />
-        <div class="logo">
-          <a href="index.html"
-            ><img class="logo__car" src="Images/icons/car.png" alt="car logo"
-          /></a>
-          <a href="index.html" class="logo__name"><span>Blue</span>Nile </a>
-        </div>
-        <nav class="nav-bar">
-          <a href="index.html">Home</a>
-          <a href="sell-cars.html">Sell Cars</a>
-          <a href="rent-cars.html">Rent Cars</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-        <div class="nav2">
-          <a href="about.html" class="nav2__about">About</a>
-          <a href="register.html">Register</a>
-        </div>
-        <a href="register.html"
-          ><img
-            class="profile-register"
-            src="Images/icons/profile.png"
-            alt="profile for register"
-        /></a>
-      </div>
-      <h1 class=" navigations__heading">Find your new car with us</h1>
-    </header>
-    <main>
-      <section class="part-one">
-        <p class="title title--para">Some of sell cars</p>
-        <div class="sell">
-          <a href="description.html?id=6">.
-            <div class="product" >
-              <img  class="product__images" src="Images/sell/maserati MC20.jpg" alt="Maserati CAR">
-              <div class="product__name"> Maserati </div>
-              <div class="product__description"><span>Model</span>: MC20 2022</div>
-              <div class="product__description"><span>Engine</span>: V6 Turbo 3.0 Liter</div>
-              <div class="product__description"><span>Money</span>: BR. 45,805,200</div>
-              <a href="description.html?id=6"><button class="product__loading-more">View Detail</button></a> 
-            </div>
-          </a>
-          <a href="description.html?id=1"
-            >.
-            <div class="product" >
-              <img class="product__images" src="Images/sell/ford.png" alt="Ford CAR" />
-              <div class="product__name">Ford</div>
-              <div class="product__description"><span> Model</span>: Ranger</div>
-              <div class="product__description">
-                <span>Engine</span>: 2.0L Inline-4 Gran Gas
+        <header  class="position-relative header ">
+          <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              <div class="mx-5" >
+                <a href="index.html"><img  class="header-img"  src="Images/icons/car.png" alt="car logo"/></a>
+                <a href="index.html" class="fs-3 text-white text-decoration-none link-warning"><span class="logo__name">Blue</span>Nile </a>
               </div>
-              <div class="product__description"><span>Money</span>: BR. 5,000,000</div>
-              <a href="description.html?id=1"
-                ><button class="product__loading-more">View Detail</button></a
-              >
-            </div>
-          </a>
-          <a href="description.html?id=2"
-            >.
-            <div class="product">
-              <img
-                class="product__images"
-                src="Images/sell/ferrari.jpg"
-                alt="Ferrari CAR"
-              />
-              <div class="product__name">Ferrari</div>
-              <div class="product__description"><span>Model</span>: 296 GTB 2023</div>
-              <div class="product__description">
-                <span>Engine</span>: 3.0L Turbo V6 Hybrid
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <nav class=" navbar-nav collapse navbar-collapse justify-content-end  " id="navbarText">
+                <a href="index.html" class="nav-link text-white fs-3 mx-3 link-warning">Home</a>
+                <a href="sell-cars.html" class="nav-link text-white fs-3 mx-3 link-warning">Sell Cars</a>
+                <a href="rent-cars.html" class="nav-link text-white fs-3 mx-3 link-warning">Rent Cars</a>
+                <a href="contact.html" class="nav-link text-white fs-3 mx-3 link-warning">Contact</a>
+              </nav>
+              <div class=" navbar-nav collapse navbar-collapse justify-content-end mx-4">
+                <a href="about.html" class="nav-link text-white fs-3 mx-2 link-warning">About</a>
+                <a href="register.html" class="nav-link text-white fs-3 mx-2 link-warning">Register</a>
               </div>
-              <div class="product__description"><span>Money</span>: BR. 9,935,200</div>
-              <a href="description.html?id=2"
-                ><button class="product__loading-more">View Detail</button></a
-              >
             </div>
-          </a>
-          <a href="description.html?id=3"
-            >.
-            <div class="product">
-              <img class="product__images" src="Images/sell/BMW.jpg" alt="BMW CAR" />
-              <div class="product__name">BMW</div>
-              <div class="product__description">
-                <span>Model</span>: 430i xDrive Gran
-              </div>
-              <div class="product__description">
-                <span>Engine</span>: 2.0L Turbo Inline-4 Gas
-              </div>
-              <div class="product__description"><span>Money</span>: BR. 6,935,200</div>
-              <a href="description.html?id=3"
-                ><button class="product__loading-more">View Detail</button></a
-              >
-            </div>
-          </a>
-          <a href="description.html?id=4">.<div class="product">
-                        <img  class="product__images" src="Images/sell/Lamborghini.jpg" alt="Lamborghini CAR">
-                        <div class="product__name"> Lamborghini </div>
-                        <div class="product__description"><span> Model</span>: Urus</div>
-                        <div class="product__description"><span>Engine</span>: 4.0-liter Twin-Turbo V8</div>
-                        <div class="product__description"><span>Money</span>: BR. 100,000,000</div>
-                        <a href="description.html?id=4"><button class="product__loading-more">View Detail</button></a>
+          </nav>
+          <h1 class=" text-black header__heading fs-1 fw-bold ">Find your new car with us</h1>
+        </header>
+        <main>
+            <section  class="part-one">
+                <p class="text-black text-center fs-1 m-5">Some of sell cars</p>
+                <div class="center d-flex justify-content-center align-items-center m-auto  w-75 ">
+                  <div class="container">
+                    <div id="carouselExample" class="carousel slide">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <a href="description.html?id=6" class="text-decoration-none">.
+                                <div class="card product shadow mb-5 bg-white border-0  ">
+                                    <img class="manlbelew card-img-top w-100" src="Images/sell/maserati MC20.jpg" alt="Maserati CAR">
+                                    <div class="card-title text-center fs-4 text-black "> Maserati </div>
+                                    <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Model</span>: MC20 2022</div>
+                                    <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Engine</span>: V6 Turbo 3.0 Liter</div>
+                                    <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Money</span>: BR. 45,805,200</div>
+                                    <a href="description.html?id=6"><button class="btn  border-opacity-75 w-100">View Detail</button></a> 
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-4">
+                              <a href="description.html?id=1" class="text-decoration-none">.
+                                <div  class="card product shadow  mb-5 bg-white  border-0">
+                                    <img class="manlbelew card-img-top " src="Images/sell/ford.png" alt="Ford CAR" />
+                                    <div class="card-title text-center fs-4 text-black ">Ford</div>
+                                    <div class="card-text text-muted fs-6 mx-3"><span class="text-black"> Model</span>: Ranger</div>
+                                    <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Engine</span>: 2.0L Inline-4 Gran Gas</div>
+                                    <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Money</span>: BR. 5,000,000</div>
+                                    <a href="description.html?id=1"><button class="btn  border-opacity-75 w-100">View Detail</button></a>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-4">
+                              <a href="description.html?id=2" class="text-decoration-none">.
+                                <div class="card product shadow  mb-5 bg-white rounded border-0">
+                                    <img class="manlbelew card-img-top " src="Images/sell/ferrari.jpg" alt="Ferrari CAR"/>
+                                    <div class="card-title text-center fs-4 text-black ">Ferrari</div>
+                                    <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Model</span>: 296 GTB 2023</div>
+                                    <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Engine</span>: 3.0L Turbo V6 Hybrid</div>
+                                    <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Money</span>: BR. 9,935,200</div>
+                                    <a href="description.html?id=2"><button class="btn  border-opacity-75 w-100">View Detail</button></a>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <a href="description.html?id=3" class="text-decoration-none">.
+                                <div class="card product shadow  mb-5 bg-white rounded border-0">
+                                    <img class="manlbelew card-img-top " src="Images/sell/BMW.jpg" alt="BMW CAR" />
+                                    <div class="card-title text-center fs-4 text-black ">BMW</div>
+                                    <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Model</span>: 430i xDrive Gran</div>
+                                    <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Engine</span>: 2.0L Turbo Inline-4 Gas</div>
+                                    <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Money</span>: BR. 6,935,200</div>
+                                    <a href="description.html?id=3"><button class="btn  border-opacity-75 w-100">View Detail</button></a>
+                                </div>
+                              </a>
+                              
+                            </div>
+                            <div class="col-lg-4">
+                              <a href="description.html?id=5" class="text-decoration-none">.
+                                <div class="card product shadow  mb-5 bg-white rounded border-0">
+                                    <img  class="manlbelew card-img-top "  src="Images/sell/jaguar.jpg" alt="Jaguar CAR">
+                                    <div class="card-title text-center fs-4 text-black "> Jaguar</div>
+                                    <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Model</span>: F-Type P450 R-Dynamic</div>
+                                    <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Engine</span>: 5.0L Supercharged V8 Gas</div>
+                                    <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Money</span>: BR. 70,935,200</div>
+                                    <a href="description.html?id=5"><button class="btn  border-opacity-75 w-100">View Detail</button></a>
+                                </div>
+                            </a>
+                              
+                            </div>
+                            <div class="col-lg-4">
+                              <a href="description.html?id=1" class="text-decoration-none">.
+                                <div  class="card product shadow  mb-5 bg-white rounded border-0">
+                                    <img class="manlbelew card-img-top " src="Images/sell/ford.png" alt="Ford CAR" />
+                                    <div class="card-title text-center fs-4 text-black ">Ford</div>
+                                    <div class="card-text text-muted fs-6 mx-3"><span class="text-black"> Model</span>: Ranger</div>
+                                    <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Engine</span>: 2.0L Inline-4 Gran Gas</div>
+                                    <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Money</span>: BR. 5,000,000</div>
+                                    <a href="description.html?id=1"><button class="btn border-opacity-75 w-100">View Detail</button></a>
+                                </div>
+                            </a>
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <a href="description.html?id=6" class="text-decoration-none">.
+                                <div  class="card product shadow mb-5 bg-white border-0 ">
+                                    <img class="manlbelew card-img-top w-100" src="Images/sell/maserati MC20.jpg" alt="Maserati CAR">
+                                    <div class="card-title text-center fs-4 text-black "> Maserati </div>
+                                    <div class="card-text text-muted fs-6 mx-3 "><span class="text-black">Model</span>: MC20 2022</div>
+                                    <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Engine</span>: V6 Turbo 3.0 Liter</div>
+                                    <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Money</span>: BR. 45,805,200</div>
+                                    <a href="description.html?id=6"><button class="btn  border-opacity-75 w-100">View Detail</button></a> 
+                                </div>
+                              
+                            </div>
+                            <div class="col-lg-4">
+                              <a href="description.html?id=4" class="text-decoration-none">.
+                                <div class="card product shadow  mb-5 bg-white rounded border-0">
+                                    <img class="manlbelew card-img-top "  src="Images/sell/Lamborghini.jpg" alt="Lamborghini CAR">
+                                    <div class="card-title text-center fs-4 text-black "> Lamborghini </div>
+                                    <div class="card-text text-muted fs-6 mx-3"><span class="text-black"> Model</span>: Urus</div>
+                                    <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Engine</span>: 4.0-liter Twin-Turbo V8</div>
+                                    <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Money</span>: BR. 100,000,000</div>
+                                    <a href="description.html?id=4"><button class="btn  border-opacity-75 w-100">View Detail</button></a>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-4">
+                              <a href="description.html?id=5" class="text-decoration-none">.
+                                <div class="card product shadow  mb-5 bg-white rounded border-0">
+                                    <img  class="manlbelew card-img-top "  src="Images/sell/jaguar.jpg" alt="Jaguar CAR">
+                                    <div class="card-title text-center fs-4 text-black "> Jaguar</div>
+                                    <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Model</span>: F-Type P450 R-Dynamic</div>
+                                    <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Engine</span>: 5.0L Supercharged V8 Gas</div>
+                                    <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Money</span>: BR. 70,935,200</div>
+                                    <a href="description.html?id=5"><button class="btn  border-opacity-75 w-100">View Detail</button></a>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev " type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <img aria-hidden="true"  class="carousel-control-prev-icon slider slider--back" src="Images/icons/Forward.png"alt="Forward slider"/>
+              
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <img   class="carousel-control-prev-icon slider slider--forward" aria-hidden="true" src="Images/icons/Forward.png"alt="Forward slider"/>
+                      </button>
                     </div>
-                </a>
-                <a href="description.html?id=5">.<div class="product">
-                        <img  class="product__images"  src="Images/sell/jaguar.jpg" alt="Jaguar CAR">
-                        <div class="product__name"> Jaguar</div>
-                        <div class="product__description"><span>Model</span>: F-Type P450 R-Dynamic</div>
-                        <div class="product__description"><span>Engine</span>: 5.0L Supercharged V8 Gas</div>
-                        <div class="product__description"><span>Money</span>: BR. 70,935,200</div>
-                        <a href="description.html?id=5"><button class="product__loading-more">View Detail</button></a>
-                    </div>
-                </a>
-                <a href="description.html?id=6">.<div class="product" >
-                        <img  class="product__images" src="Images/sell/maserati MC20.jpg" alt="Maserati CAR">
-                        <div class="product__name"> Maserati </div>
-                        <div class="product__description"><span>Model</span>: MC20 2022</div>
-                        <div class="product__description"><span>Engine</span>: V6 Turbo 3.0 Liter</div>
-                        <div class="product__description"><span>Money</span>: BR. 45,805,200</div>
-                        <a href="description.html?id=6"><button class="product__loading-more">View Detail</button></a> 
-                    </div>
-                </a>
-                <a href="description.html?id=1"
-                  >.
-                  <div class="product" >
-                    <img class="product__images" src="Images/sell/ford.png" alt="Ford CAR" />
-                    <div class="product__name">Ford</div>
-                    <div class="product__description"><span> Model</span>: Ranger</div>
-                    <div class="product__description">
-                      <span>Engine</span>: 2.0L Inline-4 Gran Gas
-                    </div>
-                    <div class="product__description"><span>Money</span>: BR. 5,000,000</div>
-                    <a href="description.html?id=1"
-                      ><button class="product__loading-more">View Detail</button></a
-                    >
                   </div>
-                </a>
-          
-        </div>
-        <button class="slider-btn">
-          <img
-            class="slider slider--back"
-            src="Images/icons/backward.png"
-            alt="backward slider"
-          />
-        </button>
-        <button class="slider-btn">
-          <img
-            class="slider slider--forward"
-            src="Images/icons/Forward.png"
-            alt="Forward slider"
-          />
-        </button>
-        <a href="sell-cars.html"><button class="see-more">See More</button></a>
-      </section>
-      <section class="part-two">
-        <p class="title title--para">Some of rent cars</p>
-        <div class="rent">
-          <a href="description.html?id=21">.<div class="product">
-              <img  class="product__images" src="Images/rent/toyota hiace.jpg" alt="Toyota hiace">
-              <div class="product__name"> Toyota hiace</div>
-              <div  class="product__description"><span>Engine</span>: 1.5L Turbo Inline-4 Gas</div>
-              <div  class="product__description"><span>Time</span>: Three day</div>
-              <div  class="product__description"><span>Money</span>: BR. 8000</div>
-              <a href="description.html?id=21"><button class="product__loading-more">View Detail</button></a>
-            </div>
-          </a>
-          
-          <a href="description.html?id=10"
-            >.
-            <div class="product">
-              <img
-                class="product__images"
-                src="Images/rent/ford fusion.jpg"
-                alt="Ford Fusion"
-              />
-              <div class="product__name">Ford Fusion</div>
-              <div class="product__description">
-                <span>Engine</span>: 1.5L EcoBoost Turbo
-              </div>
-              <div class="product__description"><span>Time</span>: Two day</div>
-              <div class="product__description"><span>Money</span>: BR. 5000</div>
-              <a href="description.html?id=10"
-                ><button class="product__loading-more">View Detail</button></a
-              >
-            </div>
-          </a>
-          <a href="description.html?id=19"
-            >.
-            <div class="product">
-              <img
-                class="product__images"
-                src="Images/rent/Nissan.webp"
-                alt="Nissan Sentra"
-              />
-              <div class="product__name">Nissan Sentra</div>
-              <div class="product__description">
-                <span>Engine</span>: 1.8L DOHC 16-Valve 
-              </div>
-              <div class="product__description"><span>Time</span>: Two day</div>
-              <div class="product__description"><span>Money</span>: BR. 4000</div>
-              <a href="description.html?id=19"
-                ><button class="product__loading-more">View Detail</button></a
-              >
-            </div>
-          </a>
-          <a href="description.html?id=11"
-            >.
-            <div class="product">
-              <img
-                class="product__images"
-                src="Images/rent/Honda-Accord-Hybrid-Sport-2022.jpg"
-                alt="Honda Accord"
-              />
-              <div class="product__name">Honda Accord</div>
-              <div class="product__description">
-                <span>Engine</span>: 1.5L Turbo Inline-4 
-              </div>
-              <div class="product__description"><span>Time</span>: Two day</div>
-              <div class="product__description"><span>Money</span>: BR. 8000</div>
-              <a href="description.html?id=11"
-                ><button class="product__loading-more">View Detail</button></a
-              >
-            </div>
-          </a>
-          <a href="description.html?id=12">.<div class="product">
-                        <img  class="product__images" src="Images/rent/jeep.png" alt="Jeep CAR">
-                        <div class="product__name"> Jeep</div>
-                        <div  class="product__description"> <span>Engine</span>: 2.4L Inline-4 Gas</div>
-                        <div  class="product__description"><span>Time</span>: Three day</div>
-                        <div  class="product__description"><span>Money</span>: BR. 9000</div>
-                        <a href="description.html?id=12"><button class="product__loading-more">View Detail</button></a>
+                </div>
+                <a href="sell-cars.html"><button class="see-more btn btn-outline-secondary  text-black">See More</button></a>
+            </section>
+            <section  class="part-one">
+              <p class="text-black text-center fs-1 my-5">Some of rent cars</p>
+              <div class="center d-flex justify-content-center align-items-center m-auto  w-75  ">
+                <div class="container">
+                  <div id="carouselExampleRent" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <a href="description.html?id=6" class="text-decoration-none">.
+                              <div class="card product shadow mb-5 bg-white border-0  ">
+                                  <img class="manlbelew card-img-top w-100" src="Images/rent/ford fusion.jpg" alt="Maserati CAR">
+                                  <div class="card-title text-center fs-4 text-black "> Ford Fusion </div>
+                                  <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Model</span>: MC20 2022</div>
+                                  <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Engine</span>: V6 Turbo 3.0 Liter</div>
+                                  <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Money</span>: BR. 45,805,200</div>
+                                  <a href="description.html?id=6"><button class="btn  border-opacity-75 w-100">View Detail</button></a> 
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-lg-4">
+                            <a href="description.html?id=6" class="text-decoration-none">.
+                              <div class="card product shadow mb-5 bg-white border-0  ">
+                                  <img class="manlbelew card-img-top w-100" src="Images/rent/Nissan.webp" alt="Maserati CAR">
+                                  <div class="card-title text-center fs-4 text-black "> Nissan </div>
+                                  <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Model</span>: MC20 2022</div>
+                                  <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Engine</span>: V6 Turbo 3.0 Liter</div>
+                                  <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Money</span>: BR. 45,805,200</div>
+                                  <a href="description.html?id=6"><button class="btn  border-opacity-75 w-100">View Detail</button></a> 
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-lg-4">
+                            <a href="description.html?id=6" class="text-decoration-none">.
+                              <div class="card product shadow mb-5 bg-white border-0  ">
+                                  <img class="manlbelew card-img-top w-100" src="Images/rent/Honda-Accord-Hybrid-Sport-2022.jpg" alt="Maserati CAR">
+                                  <div class="card-title text-center fs-4 text-black "> Honda Accord </div>
+                                  <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Model</span>: MC20 2022</div>
+                                  <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Engine</span>: V6 Turbo 3.0 Liter</div>
+                                  <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Money</span>: BR. 45,805,200</div>
+                                  <a href="description.html?id=6"><button class="btn  border-opacity-75 w-100">View Detail</button></a> 
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <a href="description.html?id=6" class="text-decoration-none">.
+                              <div  class="card product shadow mb-5 bg-white border-0 ">
+                                  <img class="manlbelew card-img-top w-100" src="Images/rent/jeep.png" alt="Maserati CAR">
+                                  <div class="card-title text-center fs-4 text-black "> Jeep </div>
+                                  <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Model</span>: MC20 2022</div>
+                                  <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Engine</span>: V6 Turbo 3.0 Liter</div>
+                                  <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Money</span>: BR. 45,805,200</div>
+                                  <a href="description.html?id=6"><button class="btn  border-opacity-75 w-100">View Detail</button></a> 
+                              </div>
+                            </a>
+                            
+                          </div>
+                          <div class="col-lg-4">
+                            <a href="description.html?id=6" class="text-decoration-none">.
+                              <div  class="card product shadow mb-5 bg-white border-0 ">
+                                  <img class="manlbelew card-img-top w-100" src="Images/rent/land cruiser mark 2.jpg" alt="Maserati CAR">
+                                  <div class="card-title text-center fs-4 text-black "> Land Cruiser </div>
+                                  <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Model</span>: MC20 2022</div>
+                                  <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Engine</span>: V6 Turbo 3.0 Liter</div>
+                                  <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Money</span>: BR. 45,805,200</div>
+                                  <a href="description.html?id=6"><button class="btn  border-opacity-75 w-100">View Detail</button></a> 
+                              </div>
+                            </a>
+                            
+                          </div>
+                          <div class="col-lg-4">
+                            <a href="description.html?id=6" class="text-decoration-none">.
+                              <div  class="card product shadow mb-5 bg-white border-0 ">
+                                  <img class="manlbelew card-img-top w-100" src="Images/rent/toyota hiace.jpg" alt="Maserati CAR">
+                                  <div class="card-title text-center fs-4 text-black "> Toyota Hiace </div>
+                                  <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Model</span>: MC20 2022</div>
+                                  <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Engine</span>: V6 Turbo 3.0 Liter</div>
+                                  <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Money</span>: BR. 45,805,200</div>
+                                  <a href="description.html?id=6"><button class="btn  border-opacity-75 w-100">View Detail</button></a> 
+                              </div>
+                            </a>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <a href="description.html?id=6" class="text-decoration-none">.
+                              <div  class="card product shadow mb-5 bg-white border-0 ">
+                                  <img class="manlbelew card-img-top w-100" src="Images/rent/Volkswagen pasat.jpg" alt="Maserati CAR">
+                                  <div class="card-title text-center fs-4 text-black "> Volkswagen </div>
+                                  <div class="card-text text-muted fs-6 mx-3 "><span class="text-black">Model</span>: MC20 2022</div>
+                                  <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Engine</span>: V6 Turbo 3.0 Liter</div>
+                                  <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Money</span>: BR. 45,805,200</div>
+                                  <a href="description.html?id=6"><button class="btn  border-opacity-75 w-100">View Detail</button></a> 
+                              </div>
+                            
+                          </div>
+                          <div class="col-lg-4">
+                            <a href="description.html?id=6" class="text-decoration-none">.
+                              <div  class="card product shadow mb-5 bg-white border-0 ">
+                                  <img class="manlbelew card-img-top w-100" src="Images/rent/BMW.jpg" alt="Maserati CAR">
+                                  <div class="card-title text-center fs-4 text-black "> BMW </div>
+                                  <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Model</span>: MC20 2022</div>
+                                  <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Engine</span>: V6 Turbo 3.0 Liter</div>
+                                  <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Money</span>: BR. 45,805,200</div>
+                                  <a href="description.html?id=6"><button class="btn  border-opacity-75 w-100">View Detail</button></a> 
+                              </div>
+                            
+                          </div>
+                          <div class="col-lg-4">
+                            <a href="description.html?id=6" class="text-decoration-none">.
+                              <div  class="card product shadow mb-5 bg-white border-0 ">
+                                  <img class="manlbelew i card-img-top w-100" src="Images/rent/lexus.jpg" alt="Maserati CAR">
+                                  <div class="card-title text-center fs-4 text-black "> Lexus </div>
+                                  <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Model</span>: MC20 2022</div>
+                                  <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Engine</span>: V6 Turbo 3.0 Liter</div>
+                                  <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Money</span>: BR. 45,805,200</div>
+                                  <a href="description.html?id=6"><button class="btn  border-opacity-75 w-100">View Detail</button></a> 
+                              </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                </a>
-                <a href="description.html?id=20">.<div class="product">
-                        <img  class="product__images" src="Images/rent/land cruiser mark 2.jpg" alt=" Land Cruiser">
-                        <div class="product__name"> Land Cruiser</div>
-                        <div  class="product__description"><span>Engine</span>: 1.8L DOHC 16-Valve 4-Cylinder</div>
-                        <div  class="product__description"><span>Time</span>: Two day</div>
-                        <div  class="product__description"><span>Money</span>: BR. 2000</div>
-                        <a href="description.html?id=20"><button class="product__loading-more">View Detail</button></a>
-                    </div>
-                </a>
-                <a href="description.html?id=21">.<div class="product">
-                        <img  class="product__images" src="Images/rent/toyota hiace.jpg" alt="Toyota hiace">
-                        <div class="product__name"> Toyota hiace</div>
-                        <div  class="product__description"><span>Engine</span>: 1.5L Turbo Inline-4 Gas</div>
-                        <div  class="product__description"><span>Time</span>: Three day</div>
-                        <div  class="product__description"><span>Money</span>: BR. 8000</div>
-                        <a href="description.html?id=21"><button class="product__loading-more">View Detail</button></a>
-                    </div>
-                </a>
-                <a href="description.html?id=10"
-                  >.
-                  <div class="product">
-                    <img
-                      class="product__images"
-                      src="Images/rent/ford fusion.jpg"
-                      alt="Ford Fusion"
-                    />
-                    <div class="product__name">Ford Fusion</div>
-                    <div class="product__description">
-                      <span>Engine</span>: 1.5L EcoBoost Turbo
-                    </div>
-                    <div class="product__description"><span>Time</span>: Two day</div>
-                    <div class="product__description"><span>Money</span>: BR. 5000</div>
-                    <a href="description.html?id=10"
-                      ><button class="product__loading-more">View Detail</button></a
-                    >
+                    <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleRent" data-bs-slide="prev">
+                        <img aria-hidden="true"  class="carousel-control-prev-icon slider slider--back" src="Images/icons/Forward.png"alt="Forward slider"/>
+            
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRent" data-bs-slide="next">
+                      <img   class="carousel-control-prev-icon slider slider--forward" aria-hidden="true" src="Images/icons/Forward.png"alt="Forward slider"/>
+                    </button>
                   </div>
-                </a>
-         
-        </div>
-        <button class="slider-btn">
-          <img
-            class="slider slider--prev"
-            src="Images/icons/backward.png"
-            alt="backward slider"
-          />
-        </button>
-        <button class="slider-btn">
-          <img
-            class="slider slider--next"
-            src="Images/icons/Forward.png"
-            alt="Forward slider"
-          />
-        </button>
-        <a href="rent-cars.html"><button class="see-more">See More</button></a>
-      </section>
-      <div>
-        <p class="title">If you may like to see the lattest cars</p>
-        <video class="video" controls preload="metadata" aria-label="video">
-          <source src="Video/My_video.mp4" type="video/mp4" />
-          <track
-            label="English"
-            kind="subtitles"
-            srclang="en"
-            src="Video/caption.vtt"
-            default
-          />
-        </video>
-      </div>
-      <div class="call">
-        <div class="call-text">
-          <div class="call-text__big">Call to action! It's time!</div>
-          <div class="call-text__small">
-            Sign up for our product by clicking that button right over it!
+                </div>
+              </div>
+              <a href="sell-cars.html"><button class="see-more btn btn-outline-secondary  text-black ">See More</button></a>
+            </section>
+            <div>
+              <p class="text-black text-center fs-1 my-5">If you may like to see the lattest cars</p>
+              <video class="video " controls preload="metadata" aria-label="video">
+                <source src="Video/My_video.mp4" type="video/mp4" />
+                <track
+                  label="English"
+                  kind="subtitles"
+                  srclang="en"
+                  src="Video/caption.vtt"
+                  default
+                />
+              </video>
+            </div>
+            <div class="d-flex justify-content-between align-content-center p-5 w-75 bg-light call m-auto mt-5 mb-5">
+              <div class="p-2 flex-grow-1 ">
+                <div class="text-black fw-bolder fs-3">Call to action! It's time!</div>
+                <div class="text-black fs-6 fw-medium">Sign up for our product by clicking that button right over it!</div>
+              </div>
+              <a href="register.html" class="p-2"><button class="btn btn-secondary  ">Sign up</button></a>
+            </div>
+        </main>
+        <footer aria-label="footer" class=" footer container-fluid bg-dark text-center text-lg-start text-white">
+          <div class="row mt-4 justify-content-around p-5">
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <div class="mx-5" >
+                <a href="index.html"><img  class="header-img"  src="Images/icons/car.png" alt="car logo"/></a>
+                <a href="index.html" class="fs-3 text-white text-decoration-none link-warning"><span class="logo__name">Blue</span>Nile</a>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <p class="text-white fs-3">Follow Us</p>
+              <div class="facebook">
+                <a href="https://www.facebook.com/dani.yemisgaw"><img src="Images/icons/facebook-logo.png" alt="facebook logo"/></a>
+                <a href="https://www.facebook.com/dani.yemisgaw" class="text-white text-decoration-none link-warning">Facebook</a>
+              </div>
+              <div>
+                <a href="http://www.t.me/weldegzabher"><img src="Images/icons/telegram.png" alt="telegram logo"/></a>
+                <a href="http://www.t.me/weldegzabher" class="text-white text-decoration-none link-warning">Telegram</a>
+              </div>
+            </div>
+            <div class=" d-flex flex-column col-lg-3 col-md-6 mb-4 mb-md-0">
+              <p class="text-white fs-3">Quick Links</p>
+              <a href="about.html" class="text-white text-decoration-none link-warning">About</a>
+              <a href="contact.html" class="text-white text-decoration-none link-warning">Contact</a>
+              <a href="register.html" class="text-white text-decoration-none link-warning">Register</a>
+              <a href="privacy-policy.html" class="text-white text-decoration-none link-warning">Privacy Policy</a>
+            </div>
           </div>
-        </div>
-        <a href="register.html"><button class="sign-up">Sign up</button></a>
-      </div>
-    </main>
-    <footer aria-label="footer" class="footer">
-      <div class="footer-top">
-        <div class="logo">
-          <a href="index.html"
-            ><img class="logo__car" src="Images/icons/car.png" alt="car logo"
-          /></a>
-          <a href="index.html" class="logo__name"><span>Blue</span>Nile </a>
-        </div>
-        <div class="follow-us">
-          <p>Follow Us</p>
-          <div class="facebook">
-            <a href="https://www.facebook.com/dani.yemisgaw"
-              ><img src="Images/icons/facebook-logo.png" alt="facebook logo"
-            /></a>
-            <a href="https://www.facebook.com/dani.yemisgaw">Facebook</a>
-          </div>
-          <div>
-            <a href="http://www.t.me/weldegzabher"
-              ><img src="Images/icons/telegram.png" alt="telegram logo"
-            /></a>
-            <a href="http://www.t.me/weldegzabher">Telegram</a>
-          </div>
-        </div>
-        <div class="quick-links">
-          <p class="title">Quick Links</p>
-          <a href="about.html" class="quick-links__about">About</a>
-          <a href="contact.html" class="quick-links__contact">Contact</a>
-          <a href="register.html" class="quick-links__register">Register</a>
-          <a href="privacy-policy.html">Privacy Policy</a>
-        </div>
-      </div>
-      <div class="copy-right">Copyright &#169; Blue Nile 2022</div>
-    </footer>
-
-    
-    <script src="header-footer.js" defer></script>
-    <script src="description.js" defer></script>
-    <script src="slider.js" defer></script>
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">Copyright &#169; Blue Nile 2022</div>
+        </footer>
+        <script src="description.js"  defer></script>
+        <script src="bootstrap.js"  defer></script>
   </body>
 </html>

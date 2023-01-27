@@ -1,60 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="Images/icons/car.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="Images/icons/car.png" />
     <title>Blue Nile</title>
-    <link rel="stylesheet" href="description.css">
-</head>
-<body onload="getID()">
-    <header aria-label="header" class="header">
-        <div class="navigations" >
-            <img class="menu" src="Images/icons/menu.png" alt="menu icon" />
-        <div class="logo">
-          <a href="index.html"
-            ><img class="logo__car" src="Images/icons/car.png" alt="car logo"
-          /></a>
-          <a href="index.html" class="logo__name"><span>Blue</span>Nile </a>
-        </div>
-        <nav class="nav-bar">
-          <a href="index.html">Home</a>
-          <a href="sell-cars.html">Sell Cars</a>
-          <a href="rent-cars.html">Rent Cars</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-        <div class="nav2">
-          <a href="about.html" class="nav2__about">About</a>
-          <a href="register.html">Register</a>
-        </div>
-        <a href="register.html"
-          ><img
-            class="profile-register"
-            src="Images/icons/profile.png"
-            alt="profile for register"
-        /></a> </div>
-        <h1 class="navigations__heading">Description</h1>
-    </header>
-    <main>
-        <section class="section-one">
-            <p class="section-one__name-car">Mercedes</p>
-            <div class="select-car">
-                <img class="select-car__image" src="Images/sell/Mercedes.jpg" alt="">
+    <link rel="stylesheet" href="public.css">
+    <link rel="stylesheet" href="bootstrap.css">
+  </head>
+  <body onload="getID()">
+    <header  class="position-relative header ">
+        <nav class="navbar navbar-expand-lg ">
+          <div class="container-fluid">
+            <div class="mx-5" >
+              <a href="index.html"><img  class="header-img"  src="Images/icons/car.png" alt="car logo"/></a>
+              <a href="index.html" class="fs-3 text-white text-decoration-none link-warning"><span class="logo__name">Blue</span>Nile </a>
             </div>
-            <img class=" slider slider--section-one__back" src="Images/icons/backward.png" alt="backward slider">
-            <img class="slider slider--section-one__forward" src="Images/icons/Forward.png" alt="Forward slider">
-             <div class="paginations">
-                <span >1</span>
-                <span >2</span>
-                <span >3</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class=" navbar-nav collapse navbar-collapse justify-content-end  " id="navbarText">
+              <a href="index.html" class="nav-link text-white fs-3 mx-3 link-warning">Home</a>
+              <a href="sell-cars.html" class="nav-link text-white fs-3 mx-3 link-warning">Sell Cars</a>
+              <a href="rent-cars.html" class="nav-link text-white fs-3 mx-3 link-warning">Rent Cars</a>
+              <a href="contact.html" class="nav-link text-white fs-3 mx-3 link-warning">Contact</a>
+            </nav>
+            <div class=" navbar-nav collapse navbar-collapse justify-content-end mx-4">
+              <a href="about.html" class="nav-link text-white fs-3 mx-2 link-warning">About</a>
+              <a href="register.html" class="nav-link text-white fs-3 mx-2 link-warning">Register</a>
+            </div>
+          </div>
+        </nav>
+        <h1 class=" text-black header__heading fs-1 fw-bold ">Description</h1>
+    </header>
+    <main class="m-5">
+        <section >
+            <p class="name text-center text-black fs-2">Ford</p>
+            <div id="carouselExampleControls" class="carousel slide w-75 h-50 m-auto" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100 h-50 image" src="Images/sell/ford.png" alt="First slide" style=" height : 270px">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100 h-75 image" src="Images/sell/ford.png" alt="Second slide" style=" height : 270px">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100 h-75 image" src="Images/sell/ford.png" alt="Third slide" style=" height : 270px">
+                  </div>
+                  <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <img aria-hidden="true"  class="carousel-control-prev-icon slider slider--back" src="Images/icons/Forward.png"alt="Forward slider"/>
+          
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <img   class="carousel-control-prev-icon slider slider--forward" aria-hidden="true" src="Images/icons/Forward.png"alt="Forward slider"/>
+                  </button>
             </div>
         </section>
         <section>
-            <div class="cars-description">
-                <p class="title">Description</p>
-                <div class="description-container">
-                    <div class="part-one">
+            <div class="cars-description mt-sm-5 mt-5 bg-light p-lg-5 ">
+                <p class="title text-black fw-bolder text-center fs-3">Description</p>
+                <div class="description-container  align-content-center justify-content-center row ">
+                    <div class="part-one col-12 col-md-4">
                         <ul aria-label="description-list-1" >
                             <li id="one" class="part-one__desc"><span>Model Number:</span> Benz GLS 580 4MATIC 2022</li>
                             <li id="two" class="part-one__desc"><span>Made In:</span> American</li>
@@ -62,7 +69,7 @@
                             <li id="four" class="part-one__desc"><span>Drive Type:</span> 4MATIC fully variable All-Wheel </li>
                         </ul>
                     </div>
-                    <div class="part-two">
+                    <div class="part-two col-12 col-md-4">
                         <ul aria-label="description-list-2" >
                             <li id="five" class="part-one__desc"><span>Gear Box:</span> Gear Box</li>
                             <li id="six" class="part-one__desc"><span>Charger: </span>Turbo</li>
@@ -73,107 +80,183 @@
                 </div>
             </div>
         </section>
-        <section class="sec-one">
-            <p class="sec-one__para">You may like</p>
-            <div class="sell">
-                <a href="description.html?id=7">.<div  class="product">
-                    <img class="product__images" src="Images/sell/lexus.jpg" alt="">
-                    <div  class="product__name"> Lexus</div>
-                    <div  class="product__description"><span> Model</span>: NX 450h+ Plug-in </div>
-                    <div  class="product__description"><span>Engine</span>: 2.5L Inline-4 Plug-in</div>
-                    <div  class="product__description"><span>Money</span>: BR. 67,000,000</div>
-                    <a href="description.html?id=7"><button class="product__loading-more">View Detail</button> </a>
-                </div></a>
-                <a href="description.html?id=11">.<div class="product" >
-                    <img class="product__images" src="Images/sell/Honda-Accord-Hybrid-Sport-2022.jpg" alt="">
-                    <div  class="product__name"> Honda</div>
-                    <div  class="product__description"><span>Model</span>: Accord Hybrid Sport</div>
-                    <div  class="product__description"><span>Engine</span>: 1.5L Turbo Inline-4 Gas</div>
-                    <div  class="product__description"><span>Money</span>: BR. 7,800,200</div>
-                    <a href="description.html?id=11"><button class="product__loading-more">View Detail</button> </a>
-                </div></a>
-                <a href="description.html?id=14">.<div class="product">
-                    <img class="product__images" src="Images/sell/Rolls Royce.jpg" alt="">
-                    <div  class="product__name"> Rolls Royce</div>
-                    <div  class="product__description"><span>Model</span>: Ghost Extended 2022</div>
-                    <div  class="product__description"><span>Engine</span>: 6.7L Twin-Turbo V12</div>
-                    <div  class="product__description"><span>Money</span>: BR. 98,895,200</div>
-                    <a href="description.html?id=14"><button class="product__loading-more">View Detail</button> </a>
-                </div></a>
-                <a href="description.html?id=16">.<div class="product">
-                    <img class="product__images" src="Images/sell/tesla.jpg" alt="">
-                    <div class="product__name">Tesla</div>
-                    <div class="product__description"><span> Model</span>: S Performance 2022</div>
-                    <div class="product__description"><span>Engine</span>: Electric 480hp 471ft. lbs</div>
-                    <div class="product__description"><span>Money</span>: BR. 120,000,000</div>
-                    <a href="description.html?id=16"><button class="product__loading-more">View Detail</button> </a>
-                </div></a>
-                <a href="description.html?id=18">.<div class="product">
-                    <img class="product__images" src="Images/sell/volvo v60.jpg" alt="">
-                    <div class="product__name"> Volvo</div>
-                    <div class="product__description"><span>Model</span>: V60 Hybrid 2022</div>
-                    <div class="product__description"><span>Engine</span>: 2.0L Turbo Inline-4 Gas</div>
-                    <div class="product__description"><span>Money</span>: BR. 15,999,200</div>
-                    <a href="description.html?id=18"><button class="product__loading-more">View Detail</button> </a> 
-                </div></a>
-                <a href="description.html?id=13">.<div class="product">
-                    <img class="product__images" src="Images/sell/Ram.jpg" alt="">
-                    <div class="product__name"> Ram</div>
-                    <div class="product__description"><span> Model</span>: 1500TRX 2022</div>
-                    <div class="product__description"><span>Engine</span>: 3.0L Twin-Turbo Flat 6 Gas</div>
-                    <div class="product__description"><span>Money</span>: BR. 33,000,000</div>
-                    <a href="description.html?id=13"><button class="product__loading-more">View Detail</button> </a>
-                </div></a>
-
+        <section  class="part-one">
+            <p class="text-black text-center fs-1 m-5">You May Like</p>
+            <div class="center d-flex justify-content-center align-items-center m-auto  w-75 ">
+              <div class="container">
+                <div id="carouselExample" class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <a href="description.html?id=6" class="text-decoration-none">.
+                            <div class="card product shadow mb-5 bg-white border-0  ">
+                                <img class="manlbelew card-img-top w-100" src="Images/sell/maserati MC20.jpg" alt="Maserati CAR">
+                                <div class="card-title text-center fs-4 text-black "> Maserati </div>
+                                <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Model</span>: MC20 2022</div>
+                                <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Engine</span>: V6 Turbo 3.0 Liter</div>
+                                <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Money</span>: BR. 45,805,200</div>
+                                <a href="description.html?id=6"><button class="btn  border-opacity-75 w-100">View Detail</button></a> 
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-4">
+                          <a href="description.html?id=1" class="text-decoration-none">.
+                            <div  class="card product shadow  mb-5 bg-white  border-0">
+                                <img class="manlbelew card-img-top " src="Images/sell/ford.png" alt="Ford CAR" />
+                                <div class="card-title text-center fs-4 text-black ">Ford</div>
+                                <div class="card-text text-muted fs-6 mx-3"><span class="text-black"> Model</span>: Ranger</div>
+                                <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Engine</span>: 2.0L Inline-4 Gran Gas</div>
+                                <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Money</span>: BR. 5,000,000</div>
+                                <a href="description.html?id=1"><button class="btn  border-opacity-75 w-100">View Detail</button></a>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-4">
+                          <a href="description.html?id=2" class="text-decoration-none">.
+                            <div class="card product shadow  mb-5 bg-white rounded border-0">
+                                <img class="manlbelew card-img-top " src="Images/sell/ferrari.jpg" alt="Ferrari CAR"/>
+                                <div class="card-title text-center fs-4 text-black ">Ferrari</div>
+                                <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Model</span>: 296 GTB 2023</div>
+                                <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Engine</span>: 3.0L Turbo V6 Hybrid</div>
+                                <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Money</span>: BR. 9,935,200</div>
+                                <a href="description.html?id=2"><button class="btn  border-opacity-75 w-100">View Detail</button></a>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <a href="description.html?id=3" class="text-decoration-none">.
+                            <div class="card product shadow  mb-5 bg-white rounded border-0">
+                                <img class="manlbelew card-img-top " src="Images/sell/BMW.jpg" alt="BMW CAR" />
+                                <div class="card-title text-center fs-4 text-black ">BMW</div>
+                                <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Model</span>: 430i xDrive Gran</div>
+                                <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Engine</span>: 2.0L Turbo Inline-4 Gas</div>
+                                <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Money</span>: BR. 6,935,200</div>
+                                <a href="description.html?id=3"><button class="btn  border-opacity-75 w-100">View Detail</button></a>
+                            </div>
+                          </a>
+                          
+                        </div>
+                        <div class="col-lg-4">
+                          <a href="description.html?id=5" class="text-decoration-none">.
+                            <div class="card product shadow  mb-5 bg-white rounded border-0">
+                                <img  class="manlbelew card-img-top "  src="Images/sell/jaguar.jpg" alt="Jaguar CAR">
+                                <div class="card-title text-center fs-4 text-black "> Jaguar</div>
+                                <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Model</span>: F-Type P450 R-Dynamic</div>
+                                <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Engine</span>: 5.0L Supercharged V8 Gas</div>
+                                <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Money</span>: BR. 70,935,200</div>
+                                <a href="description.html?id=5"><button class="btn  border-opacity-75 w-100">View Detail</button></a>
+                            </div>
+                        </a>
+                          
+                        </div>
+                        <div class="col-lg-4">
+                          <a href="description.html?id=1" class="text-decoration-none">.
+                            <div  class="card product shadow  mb-5 bg-white rounded border-0">
+                                <img class="manlbelew card-img-top " src="Images/sell/ford.png" alt="Ford CAR" />
+                                <div class="card-title text-center fs-4 text-black ">Ford</div>
+                                <div class="card-text text-muted fs-6 mx-3"><span class="text-black"> Model</span>: Ranger</div>
+                                <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Engine</span>: 2.0L Inline-4 Gran Gas</div>
+                                <div class="card-text text-muted fs-6 mx-3"><span class="text-black">Money</span>: BR. 5,000,000</div>
+                                <a href="description.html?id=1"><button class="btn border-opacity-75 w-100">View Detail</button></a>
+                            </div>
+                        </a>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <a href="description.html?id=6" class="text-decoration-none">.
+                            <div  class="card product shadow mb-5 bg-white border-0 ">
+                                <img class="manlbelew card-img-top w-100" src="Images/sell/maserati MC20.jpg" alt="Maserati CAR">
+                                <div class="card-title text-center fs-4 text-black "> Maserati </div>
+                                <div class="card-text text-muted fs-6 "><span class="text-black">Model</span>: MC20 2022</div>
+                                <div class="card-text text-muted fs-6"><span class="text-black">Engine</span>: V6 Turbo 3.0 Liter</div>
+                                <div class="card-text text-muted fs-6"><span class="text-black">Money</span>: BR. 45,805,200</div>
+                                <a href="description.html?id=6"><button class="btn  border-opacity-75 w-100">View Detail</button></a> 
+                            </div>
+                          
+                        </div>
+                        <div class="col-lg-4">
+                          <a href="description.html?id=4" class="text-decoration-none">.
+                            <div class="card product shadow  mb-5 bg-white rounded border-0">
+                                <img class="manlbelew card-img-top "  src="Images/sell/Lamborghini.jpg" alt="Lamborghini CAR">
+                                <div class="card-title text-center fs-4 text-black "> Lamborghini </div>
+                                <div class="card-text text-muted fs-6"><span class="text-black"> Model</span>: Urus</div>
+                                <div class="card-text text-muted fs-6"><span class="text-black">Engine</span>: 4.0-liter Twin-Turbo V8</div>
+                                <div class="card-text text-muted fs-6"><span class="text-black">Money</span>: BR. 100,000,000</div>
+                                <a href="description.html?id=4"><button class="btn  border-opacity-75 w-100">View Detail</button></a>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-4">
+                          <a href="description.html?id=5" class="text-decoration-none">.
+                            <div class="card product shadow  mb-5 bg-white rounded border-0">
+                                <img  class="manlbelew card-img-top "  src="Images/sell/jaguar.jpg" alt="Jaguar CAR">
+                                <div class="card-title text-center fs-4 text-black "> Jaguar</div>
+                                <div class="card-text text-muted fs-6"><span class="text-black">Model</span>: F-Type P450 R-Dynamic</div>
+                                <div class="card-text text-muted fs-6"><span class="text-black">Engine</span>: 5.0L Supercharged V8 Gas</div>
+                                <div class="card-text text-muted fs-6"><span class="text-black">Money</span>: BR. 70,935,200</div>
+                                <a href="description.html?id=5"><button class="btn  border-opacity-75 w-100">View Detail</button></a>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev " type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <img aria-hidden="true"  class="carousel-control-prev-icon slider slider--back" src="Images/icons/Forward.png"alt="Forward slider"/>
+          
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <img   class="carousel-control-prev-icon slider slider--forward" aria-hidden="true" src="Images/icons/Forward.png"alt="Forward slider"/>
+                  </button>
+                </div>
+              </div>
             </div>
-            <button ><img class="slider slider--back" src="Images/icons/backward.png" alt="backward slider"></button>
-            <button ><img  class="slider slider--forward" src="Images/icons/Forward.png" alt="Forward slider"></button>
-            <div class="paginations">
-                <span class="pagin1">1</span>
-                <span class="pagin2">2</span>
-                <span class="pagin3">3</span>
-            </div>
+            
         </section>
+    
+       
+            
+          
     </main>
-    <footer aria-label="footer" class="footer">
-        <div class="footer-top">
-          <div class="logo">
-            <a href="index.html"
-              ><img class="logo__car" src="Images/icons/car.png" alt="car logo"
-            /></a>
-            <a href="index.html" class="logo__name"><span>Blue</span>Nile </a>
+    <footer aria-label="footer" class=" footer container-fluid bg-dark text-center text-lg-start text-white">
+        <div class="row mt-4 justify-content-around p-5">
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <div class="mx-5" >
+              <a href="index.html"><img  class="header-img"  src="Images/icons/car.png" alt="car logo"/></a>
+              <a href="index.html" class="fs-3 text-white text-decoration-none link-warning"><span class="logo__name">Blue</span>Nile</a>
           </div>
-          <div class="follow-us">
-            <p>Follow Us</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <p class="text-white fs-3">Follow Us</p>
             <div class="facebook">
-              <a href="https://www.facebook.com/dani.yemisgaw"
-                ><img src="Images/icons/facebook-logo.png" alt="facebook logo"
-              /></a>
-              <a href="https://www.facebook.com/dani.yemisgaw">Facebook</a>
+              <a href="https://www.facebook.com/dani.yemisgaw"><img src="Images/icons/facebook-logo.png" alt="facebook logo"/></a>
+              <a href="https://www.facebook.com/dani.yemisgaw" class="text-white text-decoration-none link-warning">Facebook</a>
             </div>
             <div>
-              <a href="http://www.t.me/weldegzabher"
-                ><img src="Images/icons/telegram.png" alt="telegram logo"
-              /></a>
-              <a href="http://www.t.me/weldegzabher">Telegram</a>
+              <a href="http://www.t.me/weldegzabher"><img src="Images/icons/telegram.png" alt="telegram logo"/></a>
+              <a href="http://www.t.me/weldegzabher" class="text-white text-decoration-none link-warning">Telegram</a>
             </div>
           </div>
-          <div class="quick-links">
-            <p>Quick Links</p>
-            <a href="about.html" class="quick-links__about">About</a>
-            <a href="contact.html" class="quick-links__contact">Contact</a>
-            <a href="register.html" class="quick-links__register">Register</a>
-            <a href="privacy-policy.html">Privacy Policy</a>
+          <div class=" d-flex flex-column col-lg-3 col-md-6 mb-4 mb-md-0">
+            <p class="text-white fs-3">Quick Links</p>
+            <a href="about.html" class="text-white text-decoration-none link-warning">About</a>
+            <a href="contact.html" class="text-white text-decoration-none link-warning">Contact</a>
+            <a href="register.html" class="text-white text-decoration-none link-warning">Register</a>
+            <a href="privacy-policy.html" class="text-white text-decoration-none link-warning">Privacy Policy</a>
           </div>
         </div>
-        <div class="copy-right">Copyright &#169; Blue Nile 2022</div>
-    </footer>
-  
-  
-    <script src="description.js" defer></script>
-    <script src="header-footer.js" defer></script>
-    <script src="slider.js" defer></script>
-
-
-</body>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">Copyright &#169; Blue Nile 2022</div>
+      </footer>
+      <script src="description.js"  defer></script>
+      <script src="bootstrap.js"  defer></script>
+  </body>
 </html>

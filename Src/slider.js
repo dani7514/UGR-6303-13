@@ -1,32 +1,25 @@
-const sell=[...document.querySelectorAll(".sell")];
-const rent=[...document.querySelectorAll(".rent")];
-const back=document.querySelector(".slider--back");
-const forward=document.querySelector(".slider--forward");
-const prev=document.querySelector(".slider--prev");
-const next=document.querySelector(".slider--next");
-sell.forEach((item) => {
-    let containerDimensions=item.getBoundingClientRect();
-    let width=containerDimensions.width;
+const firstEx=document.querySelector(".first");
+const secondEx=document.querySelector(".second");
 
-    forward.addEventListener("click",()=>{
-        item.scrollLeft += width; 
-    })
-    back.addEventListener("click",()=>{
-        item.scrollLeft -= width; 
-    })
-})
+const first=document.querySelectorAll(".first");
+const second=document.querySelectorAll(".second");
 
-rent.forEach((item) => {
-    let containerDimensions=item.getBoundingClientRect();
-    let width=containerDimensions.width;
-    next.addEventListener("click",()=>{
-        item.scrollLeft += width; 
-    })
-    prev.addEventListener("click",()=>{
-        item.scrollLeft -= width; 
-    })
-})
+function slide(){
+    if (firstEx.style.display === "none"){
+        first.forEach((el)=>{
+            el.style.display="block";
+        })
+        second.forEach((e)=>{
+            e.style.display="none";
+        })
+    }
+    else{
+        first.forEach((el)=>{
+            el.style.display="none";
+        })
+        second.forEach((e)=>{
+            e.style.display="block";
+        })
+    }
 
-
-
-
+}

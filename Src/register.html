@@ -1,116 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="Images/icons/car.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="Images/icons/car.png" />
     <title>Blue Nile</title>
-    <link rel="stylesheet" href="register.css">
-</head>
-<body>
-    <header aria-label="header" class="header">
-        <div class="navigations" >
-            <img class="menu" src="Images/icons/menu.png" alt="menu icon" />
-            <div class="logo">
-              <a href="index.html"
-                  ><img class="logo__car" src="Images/icons/car.png" alt="car logo"
-              /></a>
-              <a href="index.html" class="logo__name"><span>Blue</span>Nile </a>
+    <link rel="stylesheet" href="public.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bootstrap.css">
+  </head>
+  <body>
+    <header  class="position-relative header ">
+        <nav class="navbar navbar-expand-lg ">
+          <div class="container-fluid">
+            <div class="mx-5" >
+              <a href="index.html"><img  class="header-img"  src="Images/icons/car.png" alt="car logo"/></a>
+              <a href="index.html" class="fs-3 text-white text-decoration-none link-warning"><span class="logo__name">Blue</span>Nile </a>
             </div>
-            <nav class="nav-bar">
-              <a href="index.html">Home</a>
-              <a href="sell-cars.html">Sell Cars</a>
-              <a href="rent-cars.html">Rent Cars</a>
-              <a href="contact.html">Contact</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class=" navbar-nav collapse navbar-collapse justify-content-end  " id="navbarText">
+              <a href="index.html" class="nav-link text-white link-warning fs-3 mx-3">Home</a>
+              <a href="sell-cars.html" class="nav-link text-white link-warning fs-3 mx-3">Sell Cars</a>
+              <a href="rent-cars.html" class="nav-link text-white link-warning fs-3 mx-3">Rent Cars</a>
+              <a href="contact.html" class="nav-link text-white link-warning fs-3 mx-3">Contact</a>
             </nav>
-            <div class="nav2">
-              <a href="about.html" class="nav2__about">About</a>
-              <a href="register.html">Register</a>
+            <div class=" navbar-nav collapse navbar-collapse justify-content-end mx-4">
+              <a href="about.html" class="nav-link text-white link-warning fs-3 mx-2">About</a>
+              <a href="register.html" class="nav-link text-white link-warning fs-3 mx-2">Register</a>
             </div>
-            <a href="register.html"
-              ><img
-                  class="profile-register"
-                  src="Images/icons/profile.png"
-                  alt="profile for register"
-              /></a>  
-        </div>
-        <h1 class="navigations__heading">Register</h1>
-    </header>
-    <main>
-        <div class="register-container">
-            <form class="register-form" action="" aria-label="register-form" id="register-form">
-                <div class="form-container">
-                    <div class="first-form">
-                        <label id="name-label" class="first-form__name-label" for="name">Name
-                            <input id="name" type="text"  class="name"/>
-                            <span></span>
-                        </label>
-                          
-                        <label id="email-label" class="first-form__email-label" for="email">Email
-                            <input id="email" type="text" class="email" />
-                            <span></span>
-                        </label>
-                        <label id="contact-label" class="first-form__contact-label" for="contact">Contact number
-                            <input id="contact" type="text" class="contact" />
-                            <span></span>
-                        </label> 
-                    </div>
-                    <div class="second-form">
-                        <label id="password-label" class="first-form__password-label" for="password">Password
-                            <input id="password" class="password" type="password"  />
-                            <span></span>
-                        </label>
-                        <label id="user-type" class="first-form__user-type-label">User type
-                            <select id="dropdown" class="dropdown">
-                              <option value="">select your role</option> 
-                              <option value="">individual</option>
-                              <option value="">campany</option>
-                            </select>
-                        </label>
-                    </div>
-                    
-                </div> 
-                <button type="submit" class="register-button">Register</button>
-            </form>
-           
-        </div>
-
-    </main>
-    <footer aria-label="footer" class="footer">
-        <div class="footer-top">
-          <div class="logo">
-            <a href="index.html"
-              ><img class="logo__car" src="Images/icons/car.png" alt="car logo"
-            /></a>
-            <a href="index.html" class="logo__name"><span>Blue</span>Nile </a>
           </div>
-          <div class="follow-us">
-            <p>Follow Us</p>
+        </nav>
+        <h1 class=" text-black header__heading fs-1 fw-bold ">Register</h1>
+      </header>
+      <main>
+        <div class="container register-form ">
+          <form class="form">
+              <div class="form-content bg-light m-lg-5 m-md-4 m-sm-3 ">
+                  <div class="row ">
+                      <div class="col-md-6 p-4 ">
+                          <div class="form-group  ">
+                              <label id="name-label" class="first-form__name-label " for="name">Name
+                                <input id="name" type="text"  class="name form-control border-0 p-3  "/>
+                                <span></span>
+                              </label>
+                          </div>
+                          <div class="form-group ">
+                              <label id="email-label" class="first-form__email-label " for="email">Email
+                                <input id="email" type="text" class="email form-control border-0 p-3" />
+                                <span></span>
+                            </label>
+                          </div>
+                          <div class="form-group ">
+                            <label id="contact-label" class="first-form__contact-label " for="contact">Contact number
+                              <input id="contact" type="text" class="contact form-control border-0 p-3" />
+                              <span></span>
+                          </label> 
+                        </div>
+                      </div>
+                      <div class="col-md-6 p-4  ">
+                          <div class="form-group ">
+                              <label id="password-label" class="first-form__password-label " for="password">Password
+                                <input id="password" class="password form-control border-0 p-3" type="password "  />
+                                <span></span>
+                            </label>
+                          </div>
+                          <div class="form-group ">
+                              <label id="user-type" class="first-form__user-type-label ">User type
+                                <select id="dropdown" class="dropdown form-control border-0 p-3">
+                                  <option value="">select your role</option> 
+                                  <option value="">individual</option>
+                                  <option value="">campany</option>
+                                </select>
+                            </label>
+                          </div>
+                      </div>
+                  </div>
+                  <button type="submit" class="btnSubmit mx-5 my-4 btn btn-outline-secondary">Register</button>
+              </div>
+          </form>
+      </div>
+    </main> 
+      <footer aria-label="footer" class=" footer container-fluid bg-dark text-center text-lg-start text-white">
+        <div class="row mt-4 justify-content-around p-5">
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <div class="mx-5" >
+              <a href="index.html"><img  class="header-img"  src="Images/icons/car.png" alt="car logo"/></a>
+              <a href="index.html" class="fs-3 text-white text-decoration-none link-warning"><span class="logo__name">Blue</span>Nile</a>
+          </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <p class="text-white fs-3">Follow Us</p>
             <div class="facebook">
-              <a href="https://www.facebook.com/dani.yemisgaw"
-                ><img src="Images/icons/facebook-logo.png" alt="facebook logo"
-              /></a>
-              <a href="https://www.facebook.com/dani.yemisgaw">Facebook</a>
+              <a href="https://www.facebook.com/dani.yemisgaw"><img src="Images/icons/facebook-logo.png" alt="facebook logo"/></a>
+              <a href="https://www.facebook.com/dani.yemisgaw" class="text-white text-decoration-none link-warning">Facebook</a>
             </div>
             <div>
-              <a href="http://www.t.me/weldegzabher"
-                ><img src="Images/icons/telegram.png" alt="telegram logo"
-              /></a>
-              <a href="http://www.t.me/weldegzabher">Telegram</a>
+              <a href="http://www.t.me/weldegzabher"><img src="Images/icons/telegram.png" alt="telegram logo"/></a>
+              <a href="http://www.t.me/weldegzabher" class="text-white text-decoration-none link-warning">Telegram</a>
             </div>
           </div>
-          <div class="quick-links">
-            <p>Quick Links</p>
-            <a href="about.html" class="quick-links__about">About</a>
-            <a href="contact.html" class="quick-links__contact">Contact</a>
-            <a href="register.html" class="quick-links__register">Register</a>
-            <a href="privacy-policy.html">Privacy Policy</a>
+          <div class=" d-flex flex-column col-lg-3 col-md-6 mb-4 mb-md-0">
+            <p class="text-white fs-3">Quick Links</p>
+            <a href="about.html" class="text-white text-decoration-none link-warning ">About</a>
+            <a href="contact.html" class="text-white text-decoration-none link-warning ">Contact</a>
+            <a href="register.html" class="text-white text-decoration-none link-warning ">Register</a>
+            <a href="privacy-policy.html" class="text-white text-decoration-none link-warning">Privacy Policy</a>
           </div>
         </div>
-        <div class="copy-right">Copyright &#169; Blue Nile 2022</div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">Copyright &#169; Blue Nile 2022</div>
       </footer>
-    <script src="formValidation.js" defer></script>
-    <script src="header-footer.js" defer></script>
-</body>
+      <script src="formValidation.js"  defer></script>
+      <script src="bootstrap.js"  defer></script>
+  </body>
 </html>

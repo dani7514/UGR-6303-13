@@ -16,7 +16,7 @@ const products=[{
 },{
     id: "2",
     name : "Ferrari", 
-    image : ["./Images/sell/ferrari.jpg",,"./Images/sell/Mercedes.jpg","./Images/sell/Ram.jpg"],
+    image : ["./Images/sell/ferrari.jpg","./Images/sell/Mercedes.jpg","./Images/sell/Ram.jpg"],
     href: "description.html?id=2",
     
     model: "<span>Model Number</span>: 296 GTB 2023",
@@ -323,27 +323,19 @@ const products=[{
 }
 ]
 
-function slider(e){
-    const nextBtn=document.querySelector(".slider--section-one__forward");
-    const prevBtn=document.querySelector(".slider--section-one__back");
-    const image=document.querySelector(".select-car__image")
-    let counter=0;
-    console.log("dani")
-    nextBtn.addEventListener('click', () => {
-        counter++;
-        if (counter > e.length - 1){
-            counter = 0;
-        }
-        image.setAttribute("src", e[counter]);
-    });
-    prevBtn.addEventListener('click', () => {
-        counter--;
-        if (counter < 0){
-            counter = e.length - 1;
-        }
-        image.setAttribute("src", e[counter]);
-    });
-}
+// function slider(e){
+//     const nextBtn=document.querySelector(".slider--section-one__forward");
+//     const image=document.querySelector(".select-car__image")
+//     let counter=1;
+//     console.log("dani")
+//     nextBtn.addEventListener('click', () => {
+//         image.setAttribute("src", e[counter]);
+//         counter++;
+//         if (counter > e.length - 1){
+//             counter = 0;
+//         }
+//     });
+// }
 
    
 function getID(){
@@ -354,9 +346,9 @@ function getID(){
     console.log(selectedProduct.image)
 
     let images=selectedProduct.image;
-    slider(images)
-    const name=document.querySelector(".section-one__name-car")
-    const selectImg=document.querySelector(".select-car__image");
+    // slider(images)
+    const name=document.querySelector(".name");
+    const selectImg=document.querySelectorAll(".image");
     const desc1=document.getElementById("one");
     const desc2=document.getElementById("two");
     const desc3=document.getElementById("three");
@@ -367,7 +359,12 @@ function getID(){
     const desc8=document.getElementById("eight");
 
     name.innerHTML=selectedProduct.name;
-    selectImg.src = selectedProduct.image[0];
+    let i=0;
+    selectImg.forEach((e)=>{
+        e.src = selectedProduct.image[i];
+        i++;
+    })
+   
     desc1.innerHTML=selectedProduct.model; 
     desc2.innerHTML=selectedProduct.madeIn;
     desc3.innerHTML=selectedProduct.enginePower;
@@ -380,29 +377,73 @@ function getID(){
 }
 
 document.getElementById("search").addEventListener("search",search1);
+console.log("dan")
 
 function search1(){
-
-    const products = document.querySelectorAll(".product");
+    const products = document.querySelectorAll(".products");
     console.log(document.getElementById("search").value)
     const value = document.getElementById("search").value.toLowerCase().trim();
 
     Array.prototype.forEach.call(products, product => {
-       
+        console.log(product.firstElementChild.firstElementChild.nextElementSibling.firstElementChild)
+        let child=product.firstElementChild.firstElementChild.nextElementSibling.firstElementChild;
         
-        if (!product.firstElementChild.nextElementSibling.innerHTML.toLowerCase().includes(value)){
+        if (!child.innerHTML.toLowerCase().includes(value)){
             product.style.display = 'none';
         }
         else {
-            product.style.display = "block"
+            product.style.display = "block";
         }
     })
-
-
-
 }
 document.querySelector(".search-btn").addEventListener("click",search1);
 
+function create(el) {
+    console.log("dani")
+    const sellCars=document.querySelector(".sell-cars") ;
+    const rentCars=document.querySelector(".rent-cars") ;
+    let div=document.createElement("div");    
+    let img=document.createElement("img");
+    let div1=document.createElement("div");
+    let div2=document.createElement("div");
+    let div3=document.createElement("div");
+    let div4=document.createElement("div");
+    let a=document.createElement("a");
+    let btn=document.createElement("button");
+
+    div.appendChild(img);
+    div.appendChild(div1);
+    div.appendChild(div2);
+    div.appendChild(div3);
+    div.appendChild(div4);
+    div.appendChild(a);
+    a.appendChild(btn);
+
+    div.classList.add("product");
+    img.classList.add("product__images");
+    div1.classList.add("product__name");
+    div2.classList.add("product__description");
+    div3.classList.add("product__description");
+    div4.classList.add("product__description");
+    btn.classList.add("product__loading-more");
+
+    img.src=el.image[0];
+    div1.innerHTML=el.name;
+    div2.innerHTML=el.model;
+    div3.innerHTML=el.Engine;
+    div4.innerHTML=el.Money;
+    btn.innerHTML="View Detail"
+    a.href=el.href
+    let input=document.getElementById("search");
+    if (input.name==="search"){
+        sellCars.appendChild(div);
+    } else{
+        rentCars.appendChild(div);
+    }
+   
+    
+
+}
 
 
 

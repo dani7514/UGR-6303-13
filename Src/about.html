@@ -1,57 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="Images/icons/car.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="Images/icons/car.png" />
     <title>Blue Nile</title>
-    <link rel="stylesheet" href="about.css">
-</head>
-<body>
-    <header aria-label="header" class="header">
-        <div class="navigations" >
-            <img class="menu" src="Images/icons/menu.png" alt="menu icon" />
-            <div class="logo">
-            <a href="index.html"
-                ><img class="logo__car" src="Images/icons/car.png" alt="car logo"
-            /></a>
-            <a href="index.html" class="logo__name"><span>Blue</span>Nile </a>
+    <link rel="stylesheet" href="public.css">
+    <link rel="stylesheet" href="bootstrap.css">
+  </head>
+  <body>
+    <header  class="position-relative header ">
+        <nav class="navbar navbar-expand-lg ">
+          <div class="container-fluid">
+            <div class="mx-5" >
+              <a href="index.html"><img  class="header-img"  src="Images/icons/car.png" alt="car logo"/></a>
+              <a href="index.html" class="fs-3 text-white text-decoration-none link-warning"><span class="logo__name">Blue</span>Nile </a>
             </div>
-            <nav class="nav-bar">
-                <a href="index.html">Home</a>
-                <a href="sell-cars.html">Sell Cars</a>
-                <a href="rent-cars.html">Rent Cars</a>
-                <a href="contact.html">Contact</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class=" navbar-nav collapse navbar-collapse justify-content-end  " id="navbarText">
+              <a href="index.html" class="nav-link text-white fs-3 mx-3 link-warning">Home</a>
+              <a href="sell-cars.html" class="nav-link text-white fs-3 mx-3 link-warning">Sell Cars</a>
+              <a href="rent-cars.html" class="nav-link text-white fs-3 mx-3 link-warning">Rent Cars</a>
+              <a href="contact.html" class="nav-link text-white fs-3 mx-3 link-warning">Contact</a>
             </nav>
-            <div class="nav2">
-                <a href="about.html" class="nav2__about">About</a>
-                <a href="register.html">Register</a>
+            <div class=" navbar-nav collapse navbar-collapse justify-content-end mx-4">
+              <a href="about.html" class="nav-link text-white fs-3 mx-2 link-warning">About</a>
+              <a href="register.html" class="nav-link text-white fs-3 mx-2 link-warning">Register</a>
             </div>
-            <a href="register.html"
-            ><img
-                class="profile-register"
-                src="Images/icons/profile.png"
-                alt="profile for register"
-            /></a>
-        </div>
-        <h1 class="navigations__heading">About us </h1>
-    </header>
-    <main>
-        <section class="sec-one">
-            <h2 >Who we are</h2>
-            <p class="sec-one__paragraphs">Blue Nile is a leading digital marketplace and solutions provider for the automotive industry that connects car buyer with us.
+          </div>
+        </nav>
+        <h1 class=" text-black header__heading fs-1 fw-bold ">About Us</h1>
+      </header>
+      <main>
+        <section class="p-5">
+            <h2 class="fs-2">Who we are</h2>
+            <p  class="mb-3  fs-6" style="text-align: justify;">Blue Nile is a leading digital marketplace and solutions provider for the automotive industry that connects car buyer with us.
                  Launched in 1998 and headquartered in Addis Ababa, the Company empowers shoppers with the data, resources and digital tools needed to make informed buying decisions and seamlessly connect with automotive retailers. In a rapidly changing market,
                   BlueNile enables dealerships and OEMs with innovative technical solutions and data-driven intelligence to better reach and influence ready-to-buy shoppers, increase inventory turn and gain market share</p>
         </section>
         <section>
-            <div class="container">
-                <div class="table-container">
-                    <table class="table">
+            <div class="container d-flex ">
+                 <div class="table-container">
+                    <table class="table table-striped h-100 table-responsive ">
                         <thead>
-                            <tr>
+                            <tr class="table-success">
                                 <th>Car icons</th>
-                                <th>Name</th>
+                                <th >Name</th>
                                 <th>Number of Available car</th>
                                 <th>Number of sold car</th>
                             </tr>
@@ -125,38 +122,38 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
-               <div class="image-container">
-                <img src="Images/about image.jpg" alt="car of bugatti">
+                </div> 
+               <div class="mx-2">
+                <img src="Images/about image.jpg" class="about__image h-100" alt="car of bugatti">
                </div>
             </div>
         </section>
         <section>
-            <h2 class="title">Our People</h2>
-            <div class="persons">
-                <div class="person-container">
-                    <img class="person-container__image" src="Images/persons/person 1.jpg" alt="Alex Venter picture">
-                    <p class="person-container__name" >Alex Venter</p>
-                    <p class="person-container__job">Chief Executive Officer</p>
+            <h2 class="text-black fs-1 text-center m-5">Our People</h2>
+            <div class="person-container d-flex justify-content-around align-items-center m-auto w-75">
+                <div >
+                    <img class="person-container__image rounded-pill" src="Images/persons/person 1.jpg" alt="Alex Venter picture">
+                    <p class="text-black fw-bolder fs-4 my-4" >Alex Venter</p>
+                    <p class="text-black fs-6">Chief Executive Officer</p>
                 </div>
-                <div class="person-container">
-                    <img class="person-container__image" src="Images/persons/person 2.jpg" alt="Sonia Jain picture">
-                    <p  class="person-container__name">Sonia Jain</p>
-                    <p class="person-container__job">Chief Financial Officer</p>
+                <div >
+                    <img class="person-container__image rounded-pill" src="Images/persons/person 2.jpg" alt="Sonia Jain picture">
+                    <p class="text-black fw-bolder fs-4 my-4">Sonia Jain</p>
+                    <p class="text-black fs-6">Chief Financial Officer</p>
                 </div>
-                <div class="person-container">
-                    <img class="person-container__image" src="Images/persons/person 3.jpg" alt="Joe Chur picture">
-                    <p  class="person-container__name">Joe Chur</p>
-                    <p class="person-container__job">Chief Product Officer</p>
+                <div >
+                    <img class="person-container__image rounded-pill" src="Images/persons/person 3.jpg" alt="Joe Chur picture">
+                    <p  class="text-black fw-bolder fs-4 my-4">Joe Chur</p>
+                    <p class="text-black fs-6">Chief Product Officer</p>
                 </div>
-                <div class="person-container">
-                    <img class="person-container__image" src="Images/persons/person 4.jpg" alt="Matthew Crawford picture">
-                    <p  class="person-container__name">Matthew Crawford</p>
-                    <p class="person-container__job">Chief Legal Officer</p>
+                <div >
+                    <img class="person-container__image rounded-pill" src="Images/persons/person 4.jpg" alt="Matthew Crawford picture">
+                    <p  class="text-black fw-bolder fs-4 my-4">Matthew Crawford</p>
+                    <p class="text-black fs-6">Chief Legal Officer</p>
                 </div>
             </div>
-            <div  class="audio-description">
-                <p class="title">Our Campany</p>
+            <div  class=" audio_container d-flex p-5 bg-light justify-content-around align-items-center">
+                <p class="text-black fw-bold">Our Campany</p>
                 <audio class="audio" controls preload="metadata" aria-label="video">
                     <source src="Audios/BlueNile.mp3" type="audio/mp3" />
                     <track
@@ -169,40 +166,35 @@
             </div>
         </section>    
     </main>
-    <footer aria-label="footer" class="footer">
-        <div class="footer-top">
-          <div class="logo">
-            <a href="index.html"
-              ><img class="logo__car" src="Images/icons/car.png" alt="car logo"
-            /></a>
-            <a href="index.html" class="logo__name"><span>Blue</span>Nile </a>
+    <footer aria-label="footer" class=" footer container-fluid bg-dark text-center text-lg-start text-white">
+        <div class="row mt-4 justify-content-around p-5">
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <div class="mx-5" >
+              <a href="index.html"><img  class="header-img"  src="Images/icons/car.png" alt="car logo"/></a>
+              <a href="index.html" class="fs-3 text-white text-decoration-none link-warning"><span class="logo__name">Blue</span>Nile</a>
           </div>
-          <div class="follow-us">
-            <p>Follow Us</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <p class="text-white fs-3">Follow Us</p>
             <div class="facebook">
-              <a href="https://www.facebook.com/dani.yemisgaw"
-                ><img src="Images/icons/facebook-logo.png" alt="facebook logo"
-              /></a>
-              <a href="https://www.facebook.com/dani.yemisgaw">Facebook</a>
+              <a href="https://www.facebook.com/dani.yemisgaw"><img src="Images/icons/facebook-logo.png" alt="facebook logo"/></a>
+              <a href="https://www.facebook.com/dani.yemisgaw" class="text-white text-decoration-none link-warning">Facebook</a>
             </div>
             <div>
-              <a href="http://www.t.me/weldegzabher"
-                ><img src="Images/icons/telegram.png" alt="telegram logo"
-              /></a>
-              <a href="http://www.t.me/weldegzabher">Telegram</a>
+              <a href="http://www.t.me/weldegzabher"><img src="Images/icons/telegram.png" alt="telegram logo"/></a>
+              <a href="http://www.t.me/weldegzabher" class="text-white text-decoration-none link-warning">Telegram</a>
             </div>
           </div>
-          <div class="quick-links">
-            <p>Quick Links</p>
-            <a href="about.html" class="quick-links__about">About</a>
-            <a href="contact.html" class="quick-links__contact">Contact</a>
-            <a href="register.html" class="quick-links__register">Register</a>
-            <a href="privacy-policy.html">Privacy Policy</a>
+          <div class=" d-flex flex-column col-lg-3 col-md-6 mb-4 mb-md-0">
+            <p class="text-white fs-3">Quick Links</p>
+            <a href="about.html" class="text-white text-decoration-none link-warning ">About</a>
+            <a href="contact.html" class="text-white text-decoration-none link-warning">Contact</a>
+            <a href="register.html" class="text-white text-decoration-none link-warning">Register</a>
+            <a href="privacy-policy.html" class="text-white text-decoration-none link-warning">Privacy Policy</a>
           </div>
         </div>
-        <div class="copy-right">Copyright &#169; Blue Nile 2022</div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">Copyright &#169; Blue Nile 2022</div>
       </footer>
-  
-    <script src="header-footer.js" defer></script>
-</body>
+      <script src="bootstrap.js"  defer></script>
+  </body>
 </html>
